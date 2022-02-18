@@ -1,0 +1,785 @@
+[
+    {
+        "id": "SmartHomeChild_curtain",
+        "name": "泰易-窗帘电机",
+        "classifiedId": "|41|42|324|",
+        "classifiedName": "窗帘电机",
+        "messageProtocol": "ty-SmartHome",
+        "protocolName": "泰易智能家居",
+        "metadata": "{\"events\":[],\"properties\":[{\"id\":\"channel_0\",\"name\":\"窗帘状态\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}}],\"functions\":[{\"id\":\"device_discovery_rsp\",\"name\":\"确认添加子设备\",\"async\":true,\"output\":{},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"status\",\"name\":\"cancel-客户取消添加，OK-确认添加\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"remove_device\",\"name\":\"删除子设备\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"read\",\"name\":\"读取子设备\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"write\",\"name\":\"窗帘开关 \",\"async\":true,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_0\",\"name\":\"开关 0表示全开    100表示全关\",\"valueType\":{\"type\":\"string\"}}]}],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "网关子设备",
+            "value": "childrenDevice"
+        },
+        "configuration": {
+            "username": "test",
+            "password": "test"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1598601544223,
+        "orgId": ""
+    },
+    {
+        "id": "SmartHomeChild_ctrl_ln3",
+        "name": "泰易-零火三键开关",
+        "classifiedId": "|41|58|123|",
+        "classifiedName": "场景开关",
+        "messageProtocol": "lilili",
+        "protocolName": "水浸测试",
+        "metadata": "{\"events\":[{\"id\":\"report_1\",\"name\":\"子设备状态上报\",\"expands\":{\"eventType\":\"reportData\",\"level\":\"ordinary\"},\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"model\",\"name\":\"设备类型\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_0\",\"name\":\"开关\",\"valueType\":{\"type\":\"string\"}}]}},{\"id\":\"report_2\",\"name\":\"告警上报\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"model\",\"name\":\"设备类型\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_0\",\"name\":\"开关\",\"valueType\":{\"type\":\"string\"}}]}},{\"id\":\"report\",\"name\":\"开关状态上报\",\"expands\":{\"eventType\":\"reportData\",\"level\":\"ordinary\"},\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"channel_0\",\"name\":\"第一路开关状态 \",\"valueType\":{\"type\":\"string\"},\"description\":\"on：开，off：关\"},{\"id\":\"channel_1\",\"name\":\"第二路开关状态\",\"valueType\":{\"type\":\"string\"},\"description\":\"on：开，off:关\"},{\"id\":\"channel_2\",\"name\":\"第三路开关状态\",\"valueType\":{\"type\":\"string\"},\"description\":\"on:开 off：关\"}]}}],\"properties\":[{\"id\":\"channel_0\",\"name\":\"第一路开关状态\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"channel_1\",\"name\":\"第二路开关状态\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"channel_2\",\"name\":\"第三路开关状态\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}}],\"functions\":[{\"id\":\"device_discovery_rsp\",\"name\":\"确认添加子设备\",\"async\":true,\"output\":{},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"status\",\"name\":\"cancel-客户取消添加，OK-确认添加\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"remove_device\",\"name\":\"删除子设备\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"read\",\"name\":\"读取子设备\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"write\",\"name\":\"三键开关\",\"async\":true,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_0\",\"name\":\"第一路开关，on：开，off：关\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_1\",\"name\":\"第二路开关，on:开，off：关\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_2\",\"name\":\"第三路开关状态 on:开 off：关\",\"valueType\":{\"type\":\"string\"}}]}],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "configuration": {
+            "username": "test",
+            "password": "test"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1597996541928,
+        "orgId": ""
+    },
+    {
+        "id": "SmartHomeChild_ctrl_ln2",
+        "name": "泰易-零火双键开关",
+        "classifiedId": "|41|58|323|",
+        "classifiedName": "灯控开关",
+        "messageProtocol": "ty-SmartHome",
+        "protocolName": "泰易智能家居",
+        "metadata": "{\"events\":[{\"id\":\"report_1\",\"name\":\"子设备状态上报\",\"expands\":{\"level\":\"ordinary\"},\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"model\",\"name\":\"设备类型\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_0\",\"name\":\"开关\",\"valueType\":{\"type\":\"string\"}}]}},{\"id\":\"report_2\",\"name\":\"告警上报\",\"expands\":{\"level\":\"warn\"},\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"model\",\"name\":\"设备类型\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_0\",\"name\":\"开关\",\"valueType\":{\"type\":\"string\"}}]}},{\"id\":\"report\",\"name\":\"开关状态上报\",\"expands\":{\"eventType\":\"reportData\",\"level\":\"ordinary\"},\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"channel_0\",\"name\":\"第一路开关状态 \",\"valueType\":{\"type\":\"string\"},\"description\":\"on：开，off：关\"},{\"id\":\"channel_1\",\"name\":\"第二路开关状态\",\"valueType\":{\"type\":\"string\"},\"description\":\"on：开，off:关\"}]}}],\"properties\":[{\"id\":\"channel_0\",\"name\":\"第一路开关状态\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"channel_1\",\"name\":\"第二路开关状态\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}}],\"functions\":[{\"id\":\"device_discovery_rsp\",\"name\":\"确认添加子设备\",\"async\":true,\"output\":{},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"status\",\"name\":\"cancel-客户取消添加，OK-确认添加\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"remove_device\",\"name\":\"删除子设备\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"read\",\"name\":\"读取子设备\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"write\",\"name\":\"双键开关\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_0\",\"name\":\"第一路开关，on：开，off：关\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_1\",\"name\":\"第二路开关，on:开，off：关\",\"valueType\":{\"type\":\"string\"}}]}],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "网关子设备",
+            "value": "childrenDevice"
+        },
+        "configuration": {
+            "username": "test",
+            "password": "test"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1597904466199,
+        "orgId": ""
+    },
+    {
+        "id": "SmartHomeChild_ctrl_ln1",
+        "name": "泰易-零火单键开关",
+        "classifiedId": "|41|58|323|",
+        "classifiedName": "灯控开关",
+        "messageProtocol": "ty-SmartHome",
+        "protocolName": "泰易智能家居",
+        "metadata": "{\"events\":[{\"id\":\"report_1\",\"name\":\"子设备状态上报\",\"expands\":{\"eventType\":\"reportData\",\"level\":\"ordinary\"},\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"model\",\"name\":\"设备类型\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_0\",\"name\":\"开关\",\"valueType\":{\"type\":\"string\"}}]}},{\"id\":\"report_2\",\"name\":\"告警上报\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"model\",\"name\":\"设备类型\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_0\",\"name\":\"开关\",\"valueType\":{\"type\":\"string\"}}]}}],\"properties\":[{\"id\":\"channel_0\",\"name\":\"开关状态\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}}],\"functions\":[{\"id\":\"device_discovery_rsp\",\"name\":\"确认添加子设备\",\"async\":true,\"output\":{},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"status\",\"name\":\"cancel-客户取消添加，OK-确认添加\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"remove_device\",\"name\":\"删除子设备\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"read\",\"name\":\"读取子设备\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"write\",\"name\":\"开关，on:开，off：关\",\"async\":true,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_0\",\"name\":\"channel_0\",\"valueType\":{\"type\":\"string\"}}]}],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "网关子设备",
+            "value": "childrenDevice"
+        },
+        "configuration": {
+            "username": "test",
+            "password": "test"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1598508265622,
+        "orgId": ""
+    },
+    {
+        "id": "SmartHomeChild_ctrl_86sw4",
+        "name": "泰易-86版四键情景开关",
+        "classifiedId": "|41|58|123|",
+        "classifiedName": "场景开关",
+        "messageProtocol": "ty-SmartHome",
+        "protocolName": "泰易智能家居",
+        "metadata": "{\"events\":[],\"properties\":[{\"id\":\"channel_0\",\"name\":\"左上键触发上报\",\"valueType\":{\"type\":\"enum\",\"elements\":[{\"text\":\"回家\",\"value\":\"on\",\"id\":0}]},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"channel_1\",\"name\":\"右上键触发上报\",\"valueType\":{\"type\":\"enum\",\"elements\":[{\"text\":\"离家\",\"value\":\"on\",\"id\":0}]},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"channel_2\",\"name\":\"左下键触发上报\",\"valueType\":{\"type\":\"enum\",\"elements\":[{\"text\":\"用餐\",\"value\":\"on\",\"id\":0}]},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"channel_3\",\"name\":\"右下键触发上报\",\"valueType\":{\"type\":\"enum\",\"elements\":[{\"text\":\"娱乐\",\"value\":\"on\",\"id\":0}]},\"expands\":{\"readOnly\":\"true\"}}],\"functions\":[],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "网关子设备",
+            "value": "childrenDevice"
+        },
+        "configuration": {
+            "username": "test",
+            "password": "test"
+        },
+        "state": 1,
+        "creatorId": "1224291557238583296",
+        "createTime": 1617768057818,
+        "orgId": ""
+    },
+    {
+        "id": "SmartHomeChild_ctrl_86plug",
+        "name": "泰易-智能插座",
+        "classifiedId": "|41|58|60|",
+        "classifiedName": "插座",
+        "messageProtocol": "ty-SmartHome",
+        "protocolName": "泰易智能家居",
+        "metadata": "{\"events\":[{\"id\":\"report_1\",\"name\":\"子设备状态上报\",\"expands\":{\"eventType\":\"reportData\",\"level\":\"ordinary\"},\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"model\",\"name\":\"设备类型\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_0\",\"name\":\"开关\",\"valueType\":{\"type\":\"string\"}}]}},{\"id\":\"report_2\",\"name\":\"告警上报\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"model\",\"name\":\"设备类型\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_0\",\"name\":\"开关\",\"valueType\":{\"type\":\"string\"}}]}},{\"id\":\"report\",\"name\":\"开关状态\",\"expands\":{\"eventType\":\"reportData\",\"level\":\"ordinary\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}}],\"properties\":[],\"functions\":[{\"id\":\"device_discovery_rsp\",\"name\":\"确认添加子设备\",\"async\":true,\"output\":{},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"status\",\"name\":\"cancel-客户取消添加，OK-确认添加\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"remove_device\",\"name\":\"删除子设备\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"read\",\"name\":\"读取子设备\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"write\",\"name\":\"开关，on:开，off：关\",\"async\":true,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_0\",\"name\":\"channel_0\",\"valueType\":{\"type\":\"string\"}}]}],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "网关子设备",
+            "value": "childrenDevice"
+        },
+        "configuration": {
+            "username": "test",
+            "password": "test"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1598509190049,
+        "orgId": ""
+    },
+    {
+        "id": "SmartHomeChild_backgroundmusic",
+        "name": "泰易-背景音乐主机",
+        "classifiedId": "|41|78|418|",
+        "classifiedName": "背景音乐控制器",
+        "messageProtocol": "ty-SmartHome",
+        "protocolName": "泰易智能家居",
+        "metadata": "{\"events\":[],\"properties\":[{\"id\":\"channel_0\",\"name\":\"开关状态\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"mute\",\"name\":\"静音标志\",\"valueType\":{\"type\":\"int\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"vol\",\"name\":\"音量大小\",\"valueType\":{\"type\":\"int\"},\"expands\":{\"readOnly\":\"true\"}}],\"functions\":[{\"id\":\"device_discovery_rsp\",\"name\":\"确认添加子设备\",\"async\":true,\"output\":{},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"status\",\"name\":\"cancel-客户取消添加，OK-确认添加\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"remove_device\",\"name\":\"删除子设备\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"read\",\"name\":\"读取子设备\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"write\",\"name\":\"控制子设备\",\"async\":true,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"channel_0\",\"name\":\"channel_0\",\"valueType\":{\"type\":\"string\"},\"description\":\"on:打开，off:关闭，play:播放，stop：停止，pause：暂停，next：下一曲，prev：上一曲，vol+：音量加，vol-：音量减，muteon：开启静音，muteoff：关闭静音\"}]}],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "网关子设备",
+            "value": "childrenDevice"
+        },
+        "configuration": {
+            "username": "test",
+            "password": "test"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1599645396969,
+        "orgId": ""
+    },
+    {
+        "id": "SmartHomeChild_Smart_lock",
+        "name": "智能门锁",
+        "classifiedId": "|41|42|120|",
+        "classifiedName": "智能门锁",
+        "messageProtocol": "ty-SmartHome",
+        "protocolName": "泰易智能家居",
+        "metadata": "{\"events\":[],\"properties\":[{\"id\":\"channel_0\",\"name\":\"门锁开关状态\",\"valueType\":{\"type\":\"enum\",\"elements\":[{\"text\":\"开\",\"value\":\"open\",\"id\":0},{\"id\":2,\"value\":\"close\",\"text\":\"关\"},{\"id\":3,\"value\":\"unknown\",\"text\":\"未知\"}]},\"expands\":{\"readOnly\":\"true\"}}],\"functions\":[{\"id\":\"device_discovery_rsp\",\"name\":\"确认添加子设备\",\"async\":true,\"output\":{},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"status\",\"name\":\"cancel-客户取消添加，OK-确认添加\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"remove_device\",\"name\":\"删除子设备\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"read\",\"name\":\"读取子设备\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"User_ID\",\"name\":\"用户ID\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"write\",\"name\":\"远程开门\",\"async\":true,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"channel_0\",\"name\":\"channel_0\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"user_id\",\"name\":\"用户名称\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"User_ID\",\"name\":\"用户名称\",\"valueType\":{\"type\":\"string\"}}]}],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "网关子设备",
+            "value": "childrenDevice"
+        },
+        "configuration": {
+            "username": "test",
+            "password": "test"
+        },
+        "state": 1,
+        "creatorId": "1224291557238583296",
+        "createTime": 1617774548142,
+        "orgId": ""
+    },
+    {
+        "id": "PiSenser",
+        "name": "pi演示产品",
+        "classifiedId": "|1|2|3|",
+        "classifiedName": "路灯照明",
+        "messageProtocol": "PiSenser",
+        "protocolName": "pi演示协议",
+        "metadata": "{\n  \"events\": [\n    {\n      \"id\": \"event1\",\n      \"name\": \"烟雾告警\",\n      \"expands\": {\n        \"level\": \"ordinary\"\n      },\n      \"valueType\": {\n        \"type\": \"object\",\n        \"properties\": [\n          {\n            \"id\": \"p3\",\n            \"name\": \"烟雾信号\",\n            \"valueType\": {\n              \"type\": \"int\"\n            }\n          }\n        ]\n      }\n    }\n  ],\n  \"properties\": [\n    {\n      \"id\": \"p1\",\n      \"name\": \"温度\",\n      \"valueType\": {\n        \"type\": \"float\",\n        \"scale\": 2\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"p2\",\n      \"name\": \"智能开关\",\n      \"valueType\": {\n        \"type\": \"enum\",\n        \"elements\": [\n          {\n            \"text\": \"关\",\n            \"value\": \"0\",\n            \"id\": 0\n          },\n          {\n            \"id\": 2,\n            \"value\": \"1\",\n            \"text\": \"开\"\n          }\n        ]\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"p3\",\n      \"name\": \"烟雾报警\",\n      \"valueType\": {\n        \"type\": \"enum\",\n        \"elements\": [\n          {\n            \"text\": \"有烟雾\",\n            \"value\": \"0\",\n            \"id\": 0\n          },\n          {\n            \"id\": 2,\n            \"value\": \"1\",\n            \"text\": \"正常\"\n          }\n        ]\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    }\n  ],\n  \"functions\": [\n    {\n      \"id\": \"fun1\",\n      \"name\": \"操作蜂鸣器\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"p1\",\n          \"name\": \"1或0，1是开，0是关\",\n          \"valueType\": {\n            \"type\": \"int\"\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"fun2\",\n      \"name\": \"操作智能开关\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"p2\",\n          \"name\": \"0或者1，1是开，0是关\",\n          \"valueType\": {\n            \"type\": \"int\"\n          }\n        }\n      ]\n    }\n  ],\n  \"tags\": []\n}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1610609641338,
+        "orgId": ""
+    },
+    {
+        "id": "P016",
+        "name": "红外测温一体机-富视云",
+        "classifiedId": "|1|2|189|",
+        "classifiedName": "微波人体探测器",
+        "messageProtocol": "infrared-thermometer-gate",
+        "protocolName": "红外测温一体机通讯协议",
+        "metadata": "{\r\n  \"events\": [],\r\n  \"properties\": [\r\n    {\r\n      \"id\": \"picture_path\",\r\n      \"name\": \"图像路径\",\r\n      \"valueType\": {\r\n        \"type\": \"file\",\r\n        \"fileType\": \"url\"\r\n      },\r\n      \"expands\": {\r\n        \"readOnly\": \"true\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"person_rect\",\r\n      \"name\": \"人脸位置二维数组\",\r\n      \"valueType\": {\r\n        \"type\": \"array\",\r\n        \"elementType\": {\r\n          \"type\": \"string\",\r\n          \"expands\": {}\r\n        }\r\n      },\r\n      \"expands\": {\r\n        \"readOnly\": \"true\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"temp_red\",\r\n      \"name\": \"当前人员的温度\",\r\n      \"valueType\": {\r\n        \"type\": \"array\",\r\n        \"elementType\": {\r\n          \"type\": \"float\",\r\n          \"scale\": 2,\r\n          \"unit\": \"celsiusDegrees\"\r\n        }\r\n      },\r\n      \"expands\": {\r\n        \"readOnly\": \"true\"\r\n      }\r\n    }\r\n  ],\r\n  \"functions\": [],\r\n  \"tags\": [\r\n    {\r\n      \"id\": \"geoAddress\",\r\n      \"name\": \"地理位置\",\r\n      \"valueType\": {\r\n        \"type\": \"geoPoint\"\r\n      },\r\n      \"expands\": {\r\n        \"readOnly\": \"false\"\r\n      },\r\n      \"description\": \"设备地理位置\"\r\n    },\r\n    {\r\n      \"id\": \"imei\",\r\n      \"name\": \"设备标识IMEI\",\r\n      \"valueType\": {\r\n        \"type\": \"string\",\r\n        \"expands\": {}\r\n      },\r\n      \"expands\": {\r\n        \"readOnly\": \"true\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"imsi\",\r\n      \"name\": \"通讯卡标识IMSI\",\r\n      \"valueType\": {\r\n        \"type\": \"string\",\r\n        \"expands\": {}\r\n      },\r\n      \"expands\": {\r\n        \"readOnly\": \"true\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"nbid\",\r\n      \"name\": \"运营商设备编号\",\r\n      \"valueType\": {\r\n        \"type\": \"string\",\r\n        \"expands\": {}\r\n      },\r\n      \"expands\": {\r\n        \"readOnly\": \"true\"\r\n      }\r\n    }\r\n  ]\r\n}",
+        "transportProtocol": "HTTP",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "configuration": {
+            "url": "http://iot2.guotaibaian.com",
+            "file_path": "InfraredPhoto"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1614493916828,
+        "orgId": "101",
+        "storePolicy": "default-row"
+    },
+    {
+        "id": "P013",
+        "name": "用传-浙江大华",
+        "classifiedId": "|1|2|161|",
+        "classifiedName": "远程监测终端",
+        "messageProtocol": "dahua-fire-control",
+        "protocolName": "大华消防用户传输设备",
+        "metadata": "{\r\n  \"events\": [],\r\n  \"properties\": [\r\n    {\r\n      \"id\": \"running_state\",\r\n      \"name\": \"运行状态\",\r\n      \"valueType\": {\r\n        \"type\": \"string\",\r\n        \"expands\": {}\r\n      },\r\n      \"expands\": {\r\n        \"readOnly\": \"true\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"state\",\r\n      \"name\": \"部件状态\",\r\n      \"valueType\": {\r\n        \"type\": \"string\",\r\n        \"expands\": {}\r\n      },\r\n      \"expands\": {\r\n        \"readOnly\": \"true\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"operation_state\",\r\n      \"name\": \"操作信息\",\r\n      \"valueType\": {\r\n        \"type\": \"string\",\r\n        \"expands\": {}\r\n      },\r\n      \"expands\": {\r\n        \"readOnly\": \"true\"\r\n      }\r\n    }\r\n  ],\r\n  \"functions\": [\r\n    {\r\n      \"id\": \"silencing\",\r\n      \"name\": \"消音\",\r\n      \"async\": true,\r\n      \"output\": {},\r\n      \"inputs\": [\r\n        {\r\n          \"id\": \"delay\",\r\n          \"name\": \"消音周期\",\r\n          \"valueType\": {\r\n            \"type\": \"int\",\r\n            \"min\": 1,\r\n            \"max\": 99\r\n          }\r\n        }\r\n      ]\r\n    }\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": \"geoAddress\",\r\n      \"name\": \"地理位置\",\r\n      \"valueType\": {\r\n        \"type\": \"geoPoint\"\r\n      },\r\n      \"expands\": {\r\n        \"readOnly\": \"false\"\r\n      },\r\n      \"description\": \"设备地理位置\"\r\n    },\r\n    {\r\n      \"id\": \"imei\",\r\n      \"name\": \"设备标识IMEI\",\r\n      \"valueType\": {\r\n        \"type\": \"string\",\r\n        \"expands\": {}\r\n      },\r\n      \"expands\": {\r\n        \"readOnly\": \"true\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"imsi\",\r\n      \"name\": \"通讯卡标识IMSI\",\r\n      \"valueType\": {\r\n        \"type\": \"string\",\r\n        \"expands\": {}\r\n      },\r\n      \"expands\": {\r\n        \"readOnly\": \"true\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"nbid\",\r\n      \"name\": \"运营商设备编号\",\r\n      \"valueType\": {\r\n        \"type\": \"string\",\r\n        \"expands\": {}\r\n      },\r\n      \"expands\": {\r\n        \"readOnly\": \"true\"\r\n      }\r\n    }\r\n  ]\r\n}",
+        "transportProtocol": "TCP",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1614310767493,
+        "orgId": ""
+    },
+    {
+        "id": "P004",
+        "name": "用电-斯贝索三相",
+        "classifiedId": "|1|2|236|",
+        "classifiedName": "用电安全探测器",
+        "messageProtocol": "1250312936363581440",
+        "protocolName": "test",
+        "metadata": "{\"events\":[{\"id\":\"alarmTemp1\",\"name\":\"温度1报警\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"alarmResidualCurrentChannel1\",\"name\":\"剩余电流1报警\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"alarmResidualCurrentChannel2\",\"name\":\"剩余电流2报警\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"alarmResidualCurrentChannel3\",\"name\":\"剩余电流3报警\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"alarmResidualCurrentChannel4\",\"name\":\"剩余电流4报警\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"alarmTemp2\",\"name\":\"温度2报警\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"alarmTemp3\",\"name\":\"温度3报警\",\"expands\":{\"eventType\":\"event\",\"level\":\"ordinary\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"alarmTemp4\",\"name\":\"温度4报警\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultResidualCurrentChannel1\",\"name\":\"剩余电流通道1故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultResidualCurrentChannel2\",\"name\":\"剩余电流通道2故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultResidualCurrentChannel3\",\"name\":\"剩余电流通道3故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultResidualCurrentChannel4\",\"name\":\"剩余电流通道4故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultTempCurrentChannel1\",\"name\":\"温度通道1故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultTempCurrentChannel2\",\"name\":\"温度通道2故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultTempCurrentChannel3\",\"name\":\"温度通道3故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultTempCurrentChannel4\",\"name\":\"温度通道4故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultInterruptVoltage1\",\"name\":\"电压1中断故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultInterruptVoltage2\",\"name\":\"电压2中断故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultInterruptVoltage3\",\"name\":\"电压3中断故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultInterruptVoltage4\",\"name\":\"电压4中断故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultCurrent1\",\"name\":\"电流1过载故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultCurrent2\",\"name\":\"电流2过载故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultCurrent3\",\"name\":\"电流3过载故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultCurrent4\",\"name\":\"电流4过载故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultOverloadVoltage1\",\"name\":\"电压1过载故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultOverloadVoltage2\",\"name\":\"电压2过载故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultOverloadVoltage3\",\"name\":\"电压3过载故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultOverloadVoltage4\",\"name\":\"电压4过载故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultUnderVoltage1\",\"name\":\"电压1欠压故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultUnderVoltage2\",\"name\":\"电压2欠压故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultUnderVoltage3\",\"name\":\"电压3欠压故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"faultUnderVoltage4\",\"name\":\"电压4欠压故障标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"threePhaseLacks\",\"name\":\"三相缺相标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}},{\"id\":\"threePhaseWrong\",\"name\":\"三相错相标志\",\"expands\":{\"eventType\":\"event\",\"level\":\"warn\"},\"valueType\":{\"type\":\"string\",\"expands\":{}}}],\"properties\":[{\"id\":\"voltageChannel1\",\"name\":\"电压通道1电压值\",\"valueType\":{\"type\":\"float\",\"scale\":2,\"unit\":\"volt\"},\"expands\":{\"readOnly\":\"false\"},\"description\":\"计算因子0.01\"},{\"id\":\"voltageChannel2\",\"name\":\"电压通道2电压值\",\"valueType\":{\"type\":\"float\",\"scale\":2,\"unit\":\"volt\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"voltageChannel3\",\"name\":\"电压通道3电压值\",\"valueType\":{\"type\":\"float\",\"scale\":2,\"unit\":\"volt\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"voltageChannel4\",\"name\":\"电压通道4电压值\",\"valueType\":{\"type\":\"float\",\"scale\":2,\"unit\":\"volt\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel1\",\"name\":\"电流通道1\",\"valueType\":{\"type\":\"float\",\"scale\":3,\"unit\":\"ampere\"},\"expands\":{\"readOnly\":\"false\"},\"description\":\"0.001\"},{\"id\":\"currentChannel2\",\"name\":\"电流通道2\",\"valueType\":{\"type\":\"float\",\"scale\":3,\"unit\":\"ampere\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel3\",\"name\":\"电流通道3\",\"valueType\":{\"type\":\"float\",\"scale\":3,\"unit\":\"ampere\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel4\",\"name\":\"电流通道4\",\"valueType\":{\"type\":\"float\",\"scale\":3,\"unit\":\"ampere\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"residualCurrentChannel1\",\"name\":\"剩余电流通道1\",\"valueType\":{\"type\":\"float\",\"scale\":1,\"unit\":\"milliAmpere\"},\"expands\":{\"readOnly\":\"false\"},\"description\":\"0.1\"},{\"id\":\"residualCurrentChannel2\",\"name\":\"剩余电流通道2\",\"valueType\":{\"type\":\"float\",\"scale\":1,\"unit\":\"milliAmpere\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"residualCurrentChannel3\",\"name\":\"剩余电流通道3\",\"valueType\":{\"type\":\"float\",\"scale\":1,\"unit\":\"milliAmpere\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"residualCurrentChannel4\",\"name\":\"剩余电流通道4\",\"valueType\":{\"type\":\"float\",\"scale\":1,\"unit\":\"milliAmpere\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"tempChannel1\",\"name\":\"温度通道1值\",\"valueType\":{\"type\":\"float\",\"scale\":1,\"unit\":\"celsiusDegrees\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"tempChannel2\",\"name\":\"温度通道2值\",\"valueType\":{\"type\":\"float\",\"scale\":1,\"unit\":\"celsiusDegrees\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"tempChannel3\",\"name\":\"温度通道3值\",\"valueType\":{\"type\":\"float\",\"scale\":1,\"unit\":\"celsiusDegrees\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"tempChannel4\",\"name\":\"温度通道4值\",\"valueType\":{\"type\":\"float\",\"scale\":1,\"unit\":\"celsiusDegrees\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"ccid\",\"name\":\"CCID\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"gprs\",\"name\":\"GPRS\",\"valueType\":{\"type\":\"int\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"currentChannel1_1_amplitude\",\"name\":\"电流通道1-1次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel1_3_amplitude\",\"name\":\"电流通道1-2次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel1_5_amplitude\",\"name\":\"电流通道1-5次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel1_7_amplitude\",\"name\":\"电流通道1-7次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel1_9_amplitude\",\"name\":\"电流通道1-9次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel1_11_amplitude\",\"name\":\"电流通道1-11次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel2_1_amplitude\",\"name\":\"电流通道2-1次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel2_3_amplitude\",\"name\":\"电流通道2-2次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel2_5_amplitude\",\"name\":\"电流通道2-5次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel2_7_amplitude\",\"name\":\"电流通道2-7次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel2_9_amplitude\",\"name\":\"电流通道2-9次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel2_11_amplitude\",\"name\":\"电流通道2-11次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel3_1_amplitude\",\"name\":\"电流通道3-1次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel3_3_amplitude\",\"name\":\"电流通道3-2次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel3_5_amplitude\",\"name\":\"电流通道3-5次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel3_7_amplitude\",\"name\":\"电流通道3-7次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel3_9_amplitude\",\"name\":\"电流通道3-9次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel3_11_amplitude\",\"name\":\"电流通道3-11次谐波值\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"currentChannel1_1_angle\",\"name\":\"电流通道1-1次谐波相角\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"currentChannel1_3_angle\",\"name\":\"电流通道1 3次谐波相角\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"currentChannel1_5_angle\",\"name\":\"电流通道1 5次谐波相角\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"currentChannel1_7_angle\",\"name\":\"电流通道1 7次谐波相角\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"currentChannel1_9_angle\",\"name\":\"电流通道1 9次谐波相角\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"currentChannel1_11_angle\",\"name\":\"电流通道1 11次谐波相角\",\"valueType\":{\"type\":\"int\",\"unit\":\"radian\"},\"expands\":{\"readOnly\":\"true\"}}],\"functions\":[{\"id\":\"device_param_query\",\"name\":\"设备参数查询\",\"async\":true,\"output\":{},\"inputs\":[]},{\"id\":\"alarm_fault_reset\",\"name\":\"报警故障复位\",\"async\":true,\"output\":{},\"inputs\":[]},{\"id\":\"self_inspection\",\"name\":\"自检\",\"async\":true,\"output\":{},\"inputs\":[]},{\"id\":\"utc_setting\",\"name\":\"UTC设置\",\"async\":true,\"output\":{},\"inputs\":[]},{\"id\":\"ccid_query\",\"name\":\"CCID号查询\",\"async\":true,\"output\":{},\"inputs\":[]},{\"id\":\"silence_setting\",\"name\":\"远程静音设置\",\"async\":true,\"output\":{},\"inputs\":[]},{\"id\":\"gprs_signal_query\",\"name\":\"GPRS信号强度查询\",\"async\":true,\"output\":{},\"inputs\":[]}],\"tags\":[{\"id\":\"imei\",\"name\":\"通讯模块标识\",\"valueType\":{\"type\":\"string\",\"expands\":{\"maxLength\":\"15\"}},\"expands\":{\"readOnly\":\"false\"}}]}",
+        "transportProtocol": "UDP",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "configuration": {
+            "device_type": "8"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1614316628290,
+        "orgId": ""
+    },
+    {
+        "id": "P003",
+        "name": "烟感-赛特威尔",
+        "classifiedId": "|41|106|331|",
+        "classifiedName": "烟感传感器",
+        "messageProtocol": "gs524n-access",
+        "protocolName": "赛尔威特烟感接入",
+        "metadata": "{\"events\":[],\"properties\":[{\"id\":\"RSRP\",\"name\":\"RSRP 信号接收功率值\",\"valueType\":{\"type\":\"int\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"Alarm_Status\",\"name\":\"报警器状态\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"AlarmLevel\",\"name\":\"离报警点的浓度百分比\",\"valueType\":{\"type\":\"int\",\"unit\":\"percent\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"Cell_ID\",\"name\":\"小区基站号\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"CSQ\",\"name\":\"CSQ 信号强度值\",\"valueType\":{\"type\":\"int\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"SNR\",\"name\":\"SNR\",\"valueType\":{\"type\":\"int\",\"unit\":\"DB\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"Battery_Level\",\"name\":\"电量百分比\",\"valueType\":{\"type\":\"int\",\"unit\":\"percent\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"Cell_ID_Length\",\"name\":\"小区基站号长度\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"TData\",\"name\":\"温度值\",\"valueType\":{\"type\":\"int\",\"unit\":\"celsiusDegrees\"},\"expands\":{\"readOnly\":\"true\"}}],\"functions\":[{\"id\":\"mute\",\"name\":\"消音\",\"async\":true,\"output\":{},\"inputs\":[{\"id\":\"command\",\"name\":\"指令\",\"valueType\":{\"type\":\"int\",\"elements\":[{\"id\":2,\"value\":\"1\",\"text\":\"单次静音\"},{\"id\":3,\"value\":\"2\",\"text\":\"连续静音\"}]}}]}],\"tags\":[]}",
+        "transportProtocol": "HTTP",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "configuration": {
+            "api_AppKey": "lD3C49h1ek9",
+            "api_productId": "15016799",
+            "api_AppSecret": "b9GlxKom4A",
+            "api_MasterKey": "20b85efe48c6432f9c985be73862476f"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1614493171774,
+        "orgId": ""
+    },
+    {
+        "id": "P002",
+        "name": "烟感-浙江大华",
+        "describe": "型号：DH-SA3NA-B",
+        "classifiedId": "|41|106|331|",
+        "classifiedName": "烟感传感器",
+        "messageProtocol": "dahuaGBT26875",
+        "protocolName": "dahua-GBT-26875.3-2011",
+        "metadata": "{\"events\":[],\"properties\":[{\"id\":\"state\",\"name\":\"状态\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"sys_state\",\"name\":\"系统状态\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"signalPower\",\"name\":\"信号功率\",\"valueType\":{\"type\":\"float\",\"scale\":1,\"unit\":\"dBm\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"snr\",\"name\":\"信噪比\",\"valueType\":{\"type\":\"float\",\"scale\":1,\"unit\":\"dBm\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"signalStrengthCSQ\",\"name\":\"信号强度\",\"valueType\":{\"type\":\"float\",\"scale\":1,\"unit\":\"\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"batteryChargePercentage\",\"name\":\"电量百分比\",\"valueType\":{\"type\":\"float\",\"unit\":\"percent\"},\"expands\":{\"readOnly\":\"false\"}},{\"id\":\"highPrecisionVoltage\",\"name\":\"电压\",\"valueType\":{\"type\":\"float\",\"scale\":2,\"unit\":\"volt\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"retransmissions\",\"name\":\"重发次数\",\"valueType\":{\"type\":\"int\",\"unit\":\"次\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"sensitivity\",\"name\":\"灵敏度\",\"valueType\":{\"type\":\"float\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"sensorSample\",\"name\":\"传感器采样值\",\"valueType\":{\"type\":\"float\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"backgroundValue\",\"name\":\"本底值\",\"valueType\":{\"type\":\"float\",\"scale\":1},\"expands\":{\"readOnly\":\"true\"}}],\"functions\":[{\"id\":\"silencing\",\"name\":\"消音\",\"async\":true,\"output\":{},\"inputs\":[{\"id\":\"delay\",\"name\":\"消音周期\",\"valueType\":{\"type\":\"int\",\"min\":1,\"max\":99}}]}],\"tags\":[{\"id\":\"geoAddress\",\"name\":\"地理位置\",\"valueType\":{\"type\":\"geoPoint\"},\"expands\":{\"readOnly\":\"false\"},\"description\":\"设备地理位置\"},{\"id\":\"imei\",\"name\":\"设备标识IMEI\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"imsi\",\"name\":\"通讯卡标识IMSI\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"ccid\",\"name\":\"通讯卡CCID号\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"nbid\",\"name\":\"OneNet设备编号\",\"valueType\":{\"type\":\"long\"},\"expands\":{\"readOnly\":\"true\"}}]}",
+        "transportProtocol": "HTTP",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "configuration": {
+            "api_key": "neLzLaFusO87zlJE7=j2EBhuxpQ="
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1614311813755,
+        "orgId": ""
+    },
+    {
+        "id": "Ner45-car-yangtze-river",
+        "name": "45英尺新能源冷藏箱",
+        "classifiedId": "|87|",
+        "classifiedName": "边缘计算",
+        "messageProtocol": "Mid-car-yangtze-river-v1",
+        "protocolName": "隔热保温车",
+        "metadata": "{\"events\":[],\"properties\":[{\"id\":\"_LOCATION_\",\"name\":\"地理位置\",\"valueType\":{\"type\":\"geoPoint\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\",\"longitude\":\"lng\",\"latitude\":\"lat\"}},{\"id\":\"_COUNTRY_\",\"name\":\"国家\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"_PROVINCE_\",\"name\":\"省\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"_CITY_\",\"name\":\"市\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"_DISTRICT_\",\"name\":\"县\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"guan_sn\",\"name\":\"设备编号\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"guan_number\",\"name\":\"箱号\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"guan_IMEI\",\"name\":\"IMEI号\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"TIME_LOCAL\",\"name\":\"数据时间\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"gas_pressure\",\"name\":\"罐内压力\",\"valueType\":{\"type\":\"double\",\"scale\":3,\"unit\":\"MPa\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"diff_pressure\",\"name\":\"差压值\",\"valueType\":{\"type\":\"double\",\"scale\":2,\"unit\":\"KPa\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"liquid_level\",\"name\":\"液位值\",\"valueType\":{\"type\":\"double\",\"scale\":2,\"unit\":\"meter\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"liquid_volume\",\"name\":\"体积值\",\"valueType\":{\"type\":\"int\",\"unit\":\"litre\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"liquid_weight\",\"name\":\"重量值\",\"valueType\":{\"type\":\"int\",\"unit\":\"kilogram\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"liquid_percentage\",\"name\":\"冲装率\",\"valueType\":{\"type\":\"double\",\"scale\":1,\"unit\":\"percent\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"guan_temperature\",\"name\":\"液相温度值\",\"valueType\":{\"type\":\"double\",\"scale\":1,\"unit\":\"celsiusDegrees\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"CPU_temperature\",\"name\":\"设备环境温度\",\"valueType\":{\"type\":\"double\",\"scale\":1,\"unit\":\"celsiusDegrees\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"bat_pre\",\"name\":\"电池电量\",\"valueType\":{\"type\":\"int\",\"unit\":\"percent\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"lng\",\"name\":\"GPS经度\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"lat\",\"name\":\"GPS纬度\",\"valueType\":{\"type\":\"string\",\"expands\":{}},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"altitude\",\"name\":\"海拔高度\",\"valueType\":{\"type\":\"int\",\"unit\":\"meter\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"speed\",\"name\":\"速度\",\"valueType\":{\"type\":\"double\",\"scale\":1,\"unit\":\"kmPerHr\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"upload_cycle\",\"name\":\"上传周期\",\"valueType\":{\"type\":\"int\",\"unit\":\"minutes\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"aspeed_x\",\"name\":\"三轴-X\",\"valueType\":{\"type\":\"int\",\"unit\":\"milligram\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"aspeed_y\",\"name\":\"三轴-Y\",\"valueType\":{\"type\":\"int\",\"unit\":\"milligram\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}},{\"id\":\"aspeed_z\",\"name\":\"三轴-Z\",\"valueType\":{\"type\":\"int\",\"unit\":\"milligram\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}}],\"functions\":[],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "configuration": {
+            "timeout": "30",
+            "key": "cb7da4f4bc2fef20b8e32e36357fea2b"
+        },
+        "state": 1,
+        "creatorId": "1224291557238583296",
+        "createTime": 1633745063012,
+        "orgId": ""
+    },
+    {
+        "id": "NB-IOT-MQTT",
+        "name": "NB-IOT-MQTT",
+        "messageProtocol": "1244910894042095616",
+        "metadata": "{\"events\":[],\"properties\":[{\"id\":\"mistimed\",\"name\":\"未对时告警\",\"valueType\":{\"type\":\"int\",\"min\":\"0\",\"max\":\"1\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"currentImbalance\",\"name\":\"电流不平衡告警\",\"valueType\":{\"type\":\"int\",\"min\":\"1\",\"max\":\"0\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"LampError\",\"name\":\"灯具异常\",\"valueType\":{\"type\":\"int\",\"min\":\"0\",\"max\":\"1\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"LeakageError\",\"name\":\"灯杆漏电\",\"valueType\":{\"type\":\"int\",\"min\":\"0\",\"max\":\"1\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"overload\",\"name\":\"过载告警\",\"valueType\":{\"type\":\"int\",\"min\":\"0\",\"max\":\"1\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"OverCurrentError\",\"name\":\"过流告警\",\"valueType\":{\"type\":\"int\",\"min\":\"0\",\"max\":\"1\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"OverVoltError\",\"name\":\"过压告警\",\"valueType\":{\"type\":\"int\",\"min\":\"0\",\"max\":\"1\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"UnderVoltError\",\"name\":\"欠压告警\",\"valueType\":{\"type\":\"int\",\"min\":\"0\",\"max\":\"1\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"voltage\",\"name\":\"电压\",\"valueType\":{\"type\":\"double\",\"scale\":\"1\",\"unit\":\"electronVolts\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"current\",\"name\":\"电流\",\"valueType\":{\"type\":\"double\",\"scale\":\"3\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"power\",\"name\":\"功率\",\"valueType\":{\"type\":\"double\",\"scale\":\"3\",\"unit\":\"kilowatt\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"totalPower\",\"name\":\"(当前)正向有功总电能\",\"valueType\":{\"type\":\"double\",\"scale\":\"2\",\"unit\":\"kWattsHour\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"leakageVoltage\",\"name\":\"漏电电压\",\"valueType\":{\"type\":\"double\",\"scale\":\"1\",\"unit\":\"electronVolts\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"leakageCurrent\",\"name\":\"漏电电流\",\"valueType\":{\"type\":\"double\",\"scale\":\"3\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"powerFactor\",\"name\":\"功率因数\",\"valueType\":{\"type\":\"double\",\"scale\":\"1\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"PWM\",\"name\":\"PWM 调光值 \",\"valueType\":{\"type\":\"int\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"signalStrength\",\"name\":\"信号强度\",\"valueType\":{\"type\":\"int\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"temperature\",\"name\":\"温度\",\"valueType\":{\"type\":\"double\",\"scale\":\"3\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"curve_voltage\",\"name\":\"曲线电压\",\"valueType\":{\"type\":\"double\",\"scale\":\"1\",\"unit\":\"electronVolts\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"curve_current\",\"name\":\"曲线电流\",\"valueType\":{\"type\":\"double\",\"scale\":\"3\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"curve_power\",\"name\":\"曲线瞬时功率\",\"valueType\":{\"type\":\"double\",\"scale\":\"4\",\"unit\":\"kilowatt\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"curve_powerFactor\",\"name\":\"曲线功率因数\",\"valueType\":{\"type\":\"double\",\"scale\":\"3\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"curve_totalEnergy\",\"name\":\"曲线组合有功电能\",\"valueType\":{\"type\":\"double\",\"scale\":\"2\",\"unit\":\"kWattsHour\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"is_light\",\"name\":\"是否亮灯\",\"valueType\":{\"type\":\"boolean\",\"trueText\":\"亮灯\",\"trueValue\":\"true\",\"falseText\":\"灭灯\",\"falseValue\":\"false\"},\"expands\":{\"readOnly\":\"true\"}}],\"functions\":[{\"id\":\"14\",\"name\":\"开关灯\",\"async\":false,\"output\":{},\"inputs\":[{\"id\":\"light\",\"name\":\"开灯关灯 0 关灯  1 开灯\",\"valueType\":{\"type\":\"int\",\"min\":\"0\",\"max\":\"1\"},\"description\":\"0 关灯  1 开灯\"}]},{\"id\":\"14_time\",\"name\":\"设置时间\",\"async\":false,\"output\":{},\"inputs\":[{\"id\":\"time\",\"name\":\"时间  000000\",\"valueType\":{\"type\":\"string\"}}]},{\"id\":\"14_date\",\"name\":\"设置日期\",\"async\":false,\"output\":{},\"inputs\":[{\"id\":\"date\",\"name\":\"日期 00000000\",\"valueType\":{\"type\":\"string\"},\"description\":\"年月日星期\"}]},{\"id\":\"04818000\",\"name\":\"PWM调光\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"description\":\"0044则PWM=44%。 0（0000）：表示 关灯，1~99表示亮度2%~100% \",\"inputs\":[{\"id\":\"pwm\",\"name\":\"pwm调光值 例如：0044\",\"valueType\":{\"type\":\"string\"},\"description\":\"0044，bcd码，4位字符串\"}]},{\"id\":\"0400010A\",\"name\":\"修改IP和端口号\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"description\":\"修改设备连接服务器的IP和地址\",\"inputs\":[{\"id\":\"IP\",\"name\":\"IPv4地址,eg:192.168.1.100\",\"valueType\":{\"type\":\"string\"},\"description\":\"eg:192.168.1.100\"},{\"id\":\"PORT\",\"name\":\"端口号：8080\",\"valueType\":{\"type\":\"int\"},\"description\":\"端口号\"}]},{\"id\":\"0E200040\",\"name\":\"现场挂网启动标志\",\"async\":false,\"output\":{\"type\":\"string\",\"expands\":{}},\"inputs\":[{\"id\":\"onSite\",\"name\":\"启动标志：0 厂内模式 1 现场挂网启动\",\"valueType\":{\"type\":\"int\",\"min\":\"0\",\"max\":\"1\"}}]}],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "configuration": {
+            "username": "chiefdata",
+            "password": "chiefdata"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1591346746168,
+        "orgId": ""
+    },
+    {
+        "id": "Mid-car-yangtze-river-v1",
+        "name": "隔热保温车",
+        "classifiedId": "|241|242|273|",
+        "classifiedName": "内保温帘幕",
+        "messageProtocol": "Mid-car-yangtze-river-v1",
+        "protocolName": "隔热保温车",
+        "metadata": "{\"events\":[],\"properties\":[],\"functions\":[],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "state": 1,
+        "creatorId": "1224291557238583296",
+        "createTime": 1628819162042,
+        "orgId": ""
+    },
+    {
+        "id": "Lindtest",
+        "name": "lindTest",
+        "describe": "Lind-Test",
+        "classifiedId": "|87|",
+        "classifiedName": "边缘计算",
+        "messageProtocol": "opc-ua",
+        "protocolName": "OPC-UA",
+        "metadata": "{\n    \"events\": [\n        {\n            \"id\": \"yanshitest\",\n            \"name\": \"123\",\n            \"expands\": {\n                \"level\": \"ordinary\"\n            },\n            \"valueType\": {\n                \"type\": \"int\",\n                \"unit\": \"turnPerSeconds\"\n            },\n            \"description\": \"3213\"\n        },\n        {\n            \"id\": \"test0\",\n            \"name\": \"312\",\n            \"expands\": {\n                \"level\": \"ordinary\"\n            },\n            \"valueType\": {\n                \"type\": \"int\",\n                \"unit\": \"percent\"\n            },\n            \"description\": \"321\"\n        }\n    ],\n    \"properties\": [\n        {\n            \"id\": \"IA\",\n            \"name\": \"A相电流\",\n            \"valueType\": {\n                \"type\": \"float\",\n                \"scale\": 2,\n                \"unit\": \"ampere\"\n            },\n            \"expands\": {\n                \"readOnly\": \"true\",\n                \"source\": \"device\",\n                \"storageType\": \"direct\"\n            }\n        },\n        {\n            \"id\": \"IB\",\n            \"name\": \"B相电流\",\n            \"valueType\": {\n                \"type\": \"float\",\n                \"scale\": 2,\n                \"unit\": \"ampere\"\n            },\n            \"expands\": {\n                \"readOnly\": \"false\",\n                \"source\": \"device\",\n                \"storageType\": \"direct\"\n            }\n        },\n        {\n            \"id\": \"IC\",\n            \"name\": \"C相电流\",\n            \"valueType\": {\n                \"type\": \"float\",\n                \"scale\": 2,\n                \"unit\": \"ampere\"\n            },\n            \"expands\": {\n                \"readOnly\": \"true\",\n                \"source\": \"device\",\n                \"storageType\": \"direct\"\n            }\n        },\n        {\n            \"id\": \"UA\",\n            \"name\": \"A相电压\",\n            \"valueType\": {\n                \"type\": \"float\",\n                \"scale\": 2,\n                \"unit\": \"volt\"\n            },\n            \"expands\": {\n                \"readOnly\": \"true\",\n                \"source\": \"device\",\n                \"storageType\": \"direct\"\n            }\n        },\n        {\n            \"id\": \"UB\",\n            \"name\": \"B相电压\",\n            \"valueType\": {\n                \"type\": \"float\",\n                \"scale\": 2,\n                \"unit\": \"volt\"\n            },\n            \"expands\": {\n                \"readOnly\": \"true\",\n                \"source\": \"device\",\n                \"storageType\": \"direct\"\n            }\n        },\n        {\n            \"id\": \"UC\",\n            \"name\": \"C相电压\",\n            \"valueType\": {\n                \"type\": \"float\",\n                \"scale\": 2,\n                \"unit\": \"volt\"\n            },\n            \"expands\": {\n                \"readOnly\": \"true\",\n                \"source\": \"device\",\n                \"storageType\": \"direct\"\n            }\n        },\n        {\n            \"id\": \"Q\",\n            \"name\": \"无功功率\",\n            \"valueType\": {\n                \"type\": \"float\",\n                \"scale\": 2,\n                \"unit\": \"KW\"\n            },\n            \"expands\": {\n                \"readOnly\": \"true\",\n                \"source\": \"device\",\n                \"storageType\": \"direct\"\n            },\n            \"description\": \"1\"\n        },\n        {\n            \"id\": \"PF\",\n            \"name\": \"功率因素\",\n            \"valueType\": {\n                \"type\": \"float\",\n                \"scale\": 2,\n                \"unit\": \"\"\n            },\n            \"expands\": {\n                \"readOnly\": \"true\",\n                \"source\": \"device\",\n                \"storageType\": \"direct\"\n            }\n        },\n        {\n            \"id\": \"EPI\",\n            \"name\": \"累计电能读数\",\n            \"valueType\": {\n                \"type\": \"float\",\n                \"scale\": 2,\n                \"unit\": \"kwh\"\n            },\n            \"expands\": {\n                \"readOnly\": \"true\",\n                \"source\": \"device\",\n                \"storageType\": \"direct\"\n            }\n        },\n        {\n            \"id\": \"P\",\n            \"name\": \"功率\",\n            \"valueType\": {\n                \"type\": \"float\",\n                \"scale\": 2,\n                \"unit\": \"kw\"\n            },\n            \"expands\": {\n                \"readOnly\": \"true\",\n                \"source\": \"device\",\n                \"storageType\": \"direct\"\n            }\n        },\n        {\n            \"id\": \"test-1-a\",\n            \"name\": \"测试数学1a\",\n            \"valueType\": {\n                \"type\": \"boolean\",\n                \"trueText\": \"是1\",\n                \"trueValue\": \"1true\",\n                \"falseText\": \"否1\",\n                \"falseValue\": \"1false\"\n            },\n            \"expands\": {\n                \"readOnly\": \"true\",\n                \"source\": \"device\"\n            },\n            \"description\": \"1\"\n        },\n        {\n            \"id\": \"testaa1\",\n            \"name\": \"测试aa1\",\n            \"valueType\": {\n                \"type\": \"long\",\n                \"unit\": \"count\"\n            },\n            \"expands\": {\n                \"readOnly\": \"true\",\n                \"source\": \"device\",\n                \"storageType\": \"ignore\"\n            },\n            \"description\": \"测试aa1\"\n        },\n        {\n            \"id\": \"test\",\n            \"name\": \"测试1\",\n            \"valueType\": {\n                \"type\": \"int\",\n                \"unit\": \"percent\"\n            },\n            \"expands\": {\n                \"readOnly\": \"true\",\n                \"source\": \"device\"\n            },\n            \"description\": \"测试1\"\n        }\n    ],\n    \"functions\": [\n        {\n            \"id\": \"CP\",\n            \"name\": \"产品添加功能\",\n            \"async\": false,\n            \"output\": {},\n            \"inputs\": [\n                {\n                    \"id\": \"A\",\n                    \"name\": \"A\",\n                    \"valueType\": {\n                        \"type\": \"int\",\n                        \"unit\": \"nanometer\"\n                    }\n                }\n            ]\n        }\n    ],\n    \"tags\": [\n        {\n            \"id\": \"test\",\n            \"name\": \"生产厂家\",\n            \"valueType\": {\n                \"type\": \"string\",\n                \"expands\": {}\n            },\n            \"expands\": {\n                \"readOnly\": \"true\"\n            }\n        },\n        {\n            \"id\": \"ceshi\",\n            \"name\": \"测试1\",\n            \"valueType\": {\n                \"type\": \"geoPoint\"\n            },\n            \"expands\": {\n                \"readOnly\": \"true\"\n            }\n        }\n    ]\n}",
+        "transportProtocol": "OPC_UA",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "state": 0,
+        "creatorId": "1199596756811550720",
+        "createTime": 1636359392684,
+        "orgId": "1448937583502225408",
+        "storePolicy": "default-column"
+    },
+    {
+        "id": "LXSY-NB",
+        "name": "NB卡扣式水表",
+        "classifiedId": "|1|15|21|",
+        "classifiedName": "水表",
+        "messageProtocol": "OE8000-access",
+        "protocolName": "OE8000水表协议",
+        "metadata": "{\n  \"events\": [],\n  \"properties\": [\n    {\n      \"id\": \"data\",\n      \"name\": \"读数\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"scale\": 3,\n        \"unit\": \"cubicMeter\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"data1\",\n      \"name\": \"读数(尖)\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"scale\": 3,\n        \"unit\": \"cubicMeter\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"data2\",\n      \"name\": \"读数(峰)\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"scale\": 3,\n        \"unit\": \"cubicMeter\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"data4\",\n      \"name\": \"读数(谷)\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"scale\": 3,\n        \"unit\": \"cubicMeter\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"magnification\",\n      \"name\": \"倍率\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"scale\": 2\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"magnificationData\",\n      \"name\": \"倍率读数\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"scale\": 3\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"magnificationData1\",\n      \"name\": \"倍率读数(尖)\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"scale\": 3\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"data3\",\n      \"name\": \"读数(平)\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"scale\": 3,\n        \"unit\": \"cubicMeter\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"magnificationData2\",\n      \"name\": \"倍率读数(峰)\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"scale\": 3\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"magnificationData3\",\n      \"name\": \"倍率读数(平)\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"scale\": 3\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"magnificationData4\",\n      \"name\": \"倍率读数(谷)\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"scale\": 3\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    }\n  ],\n  \"functions\": [],\n  \"tags\": []\n}",
+        "transportProtocol": "HTTP",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1614494386991,
+        "orgId": "",
+        "storePolicy": "default-row"
+    },
+    {
+        "id": "G1",
+        "name": "D1区楼道海康监控",
+        "classifiedId": "|41|42|148|",
+        "classifiedName": "摄像头",
+        "messageProtocol": "jetlinks-edge-v1",
+        "protocolName": "JetLinks融合网关1.0",
+        "metadata": "{\"functions\":[{\"async\":true,\"inputs\":[],\"name\":\"重启\",\"id\":\"restart\"}],\"properties\":[{\"valueType\":{\"unit\":\"percent\",\"scale\":1,\"type\":\"float\"},\"name\":\"CPU使用率\",\"id\":\"cpuUsage\",\"expands\":{\"readOnly\":\"true\"}},{\"valueType\":{\"unit\":\"percent\",\"type\":\"float\"},\"name\":\"JVM内存使用率\",\"id\":\"jvmMemUsage\",\"expands\":{\"readOnly\":\"true\"}},{\"valueType\":{\"unit\":\"percent\",\"scale\":1,\"type\":\"float\"},\"name\":\"系统内存使用率\",\"id\":\"sysMemUsage\",\"expands\":{\"readOnly\":\"true\"}},{\"valueType\":{\"unit\":\"percent\",\"scale\":1,\"type\":\"float\"},\"name\":\"磁盘使用率\",\"id\":\"diskUsage\",\"expands\":{\"readOnly\":\"true\"}},{\"valueType\":{\"unit\":\"celsiusDegrees\",\"type\":\"int\"},\"name\":\"CPU温度\",\"id\":\"cpuTemp\",\"expands\":{\"readOnly\":\"true\"}}],\"events\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "state": 1,
+        "creatorId": "1390602992044908544",
+        "createTime": 1620381051301,
+        "orgId": ""
+    },
+    {
+        "id": "ADAS-test",
+        "name": "中汽研ADAS测试产品",
+        "classifiedId": "|1|2|76|",
+        "classifiedName": "车辆定位卡",
+        "messageProtocol": "ADAS",
+        "protocolName": "中汽研演示协议",
+        "metadata": "{\n  \"events\": [],\n  \"properties\": [\n    {\n      \"id\": \"alarmSign\",\n      \"name\": \"报警标志\",\n      \"valueType\": {\n        \"type\": \"string\",\n        \"expands\": {}\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"status\",\n      \"name\": \"状态\",\n      \"valueType\": {\n        \"type\": \"string\",\n        \"expands\": {}\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"latitude\",\n      \"name\": \"纬度\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"unit\": \"degrees\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"longitude\",\n      \"name\": \"经度\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"unit\": \"degrees\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"elevation\",\n      \"name\": \"高程\",\n      \"valueType\": {\n        \"type\": \"int\",\n        \"unit\": \"meter\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"speed\",\n      \"name\": \"行驶记录功能获取的速度\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"unit\": \"kmPerHr\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"direction\",\n      \"name\": \"方向\",\n      \"valueType\": {\n        \"type\": \"int\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"mileage\",\n      \"name\": \"里程\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"unit\": \"kilometer\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"oilVolume\",\n      \"name\": \"油量\",\n      \"valueType\": {\n        \"type\": \"double\",\n        \"unit\": \"litre\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"alarmEventID\",\n      \"name\": \"需要人工确认报警事件的ID\",\n      \"valueType\": {\n        \"type\": \"int\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"tirePressure\",\n      \"name\": \"胎压\",\n      \"valueType\": {\n        \"type\": \"array\",\n        \"elementType\": {\n          \"type\": \"int\",\n          \"unit\": \"pascal\"\n        }\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"speedingAlarm\",\n      \"name\": \"超速报警附加信息\",\n      \"valueType\": {\n        \"type\": \"object\",\n        \"properties\": [\n          {\n            \"id\": \"locationType\",\n            \"name\": \"位置类型\",\n            \"valueType\": {\n              \"type\": \"string\"\n            },\n            \"description\": \"位置类型为无特定位置时，区域或路段ID没有值\"\n          },\n          {\n            \"id\": \"areaID\",\n            \"name\": \"区域或路段ID\",\n            \"valueType\": {\n              \"type\": \"int\"\n            }\n          }\n        ]\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"routeAlarm\",\n      \"name\": \"进出区域/路线报警附加信息\",\n      \"valueType\": {\n        \"type\": \"object\",\n        \"properties\": [\n          {\n            \"id\": \"locationType\",\n            \"name\": \"位置类型\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"areaID\",\n            \"name\": \"区域或路线ID\",\n            \"valueType\": {\n              \"type\": \"int\"\n            }\n          },\n          {\n            \"id\": \"direction\",\n            \"name\": \"方向\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          }\n        ]\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"roadTravelTime\",\n      \"name\": \"路段行驶时间不足/过长报警信息\",\n      \"valueType\": {\n        \"type\": \"object\",\n        \"properties\": [\n          {\n            \"id\": \"areaID\",\n            \"name\": \"路段ID\",\n            \"valueType\": {\n              \"type\": \"int\"\n            }\n          },\n          {\n            \"id\": \"time\",\n            \"name\": \"路段行驶时间\",\n            \"valueType\": {\n              \"type\": \"int\",\n              \"unit\": \"seconds\"\n            }\n          },\n          {\n            \"id\": \"result\",\n            \"name\": \"结果\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          }\n        ]\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"vehicleSignalStatus\",\n      \"name\": \"扩展车辆信号状态位\",\n      \"valueType\": {\n        \"type\": \"string\",\n        \"expands\": {}\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"iOStatus\",\n      \"name\": \"IO状态位\",\n      \"valueType\": {\n        \"type\": \"string\",\n        \"expands\": {}\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"analog\",\n      \"name\": \"模拟量\",\n      \"valueType\": {\n        \"type\": \"object\",\n        \"properties\": [\n          {\n            \"id\": \"AD0\",\n            \"name\": \"AD0\",\n            \"valueType\": {\n              \"type\": \"int\"\n            }\n          },\n          {\n            \"id\": \"AD1\",\n            \"name\": \"AD1\",\n            \"valueType\": {\n              \"type\": \"int\"\n            }\n          }\n        ]\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"wirelessCommunication\",\n      \"name\": \"无线通信网络信号强度\",\n      \"valueType\": {\n        \"type\": \"int\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"positioningSatellitesNumber\",\n      \"name\": \"GNSS定位卫星数\",\n      \"valueType\": {\n        \"type\": \"int\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    },\n    {\n      \"id\": \"carriageTemperature\",\n      \"name\": \"车厢温度\",\n      \"valueType\": {\n        \"type\": \"int\",\n        \"unit\": \"celsiusDegrees\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\"\n      }\n    }\n  ],\n  \"functions\": [\n    {\n      \"id\": \"locationQuery\",\n      \"name\": \"位置信息查询\",\n      \"async\": true,\n      \"output\": {\n        \"type\": \"object\",\n        \"properties\": [\n          {\n            \"id\": \"replySerialNumber\",\n            \"name\": \"应答流水号\",\n            \"valueType\": {\n              \"type\": \"int\"\n            }\n          },\n          {\n            \"id\": \"alarmSign\",\n            \"name\": \"报警标志\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"status\",\n            \"name\": \"状态\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"latitude\",\n            \"name\": \"纬度\",\n            \"valueType\": {\n              \"type\": \"double\",\n              \"unit\": \"degrees\"\n            }\n          },\n          {\n            \"id\": \"longitude\",\n            \"name\": \"经度\",\n            \"valueType\": {\n              \"type\": \"double\",\n              \"unit\": \"degrees\"\n            }\n          },\n          {\n            \"id\": \"elevation\",\n            \"name\": \"高程\",\n            \"valueType\": {\n              \"type\": \"int\",\n              \"unit\": \"meter\"\n            }\n          },\n          {\n            \"id\": \"speed\",\n            \"name\": \"速度\",\n            \"valueType\": {\n              \"type\": \"double\",\n              \"unit\": \"kmPerHr\"\n            }\n          },\n          {\n            \"id\": \"direction\",\n            \"name\": \"方向\",\n            \"valueType\": {\n              \"type\": \"int\"\n            }\n          },\n          {\n            \"id\": \"mileage\",\n            \"name\": \"里程\",\n            \"valueType\": {\n              \"type\": \"double\",\n              \"unit\": \"kilometer\"\n            }\n          }\n        ]\n      },\n      \"inputs\": []\n    },\n    {\n      \"id\": \"queryTerminalParameters\",\n      \"name\": \"查询终端参数\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": []\n    },\n    {\n      \"id\": \"querySpecifiedTerminalParameters\",\n      \"name\": \"查询指定终端参数\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"parameterIdList\",\n          \"name\": \"参数ID列表\",\n          \"valueType\": {\n            \"type\": \"array\",\n            \"expands\": {\n              \"elementType\": {\n                \"type\": \"int\"\n              }\n            }\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"terminalControl\",\n      \"name\": \"终端控制\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"command\",\n          \"name\": \"命令字\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"2 控制终端连接指定服务器\\n4 终端复位\\n5 终端恢复出厂设置\"\n        },\n        {\n          \"id\": \"commandParameters\",\n          \"name\": \"命令参数\",\n          \"valueType\": {\n            \"type\": \"string\"\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"queryTerminalProperties\",\n      \"name\": \"查询终端属性\",\n      \"async\": true,\n      \"output\": {\n        \"type\": \"object\",\n        \"properties\": [\n          {\n            \"id\": \"terminalType\",\n            \"name\": \"终端类型\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"manufacturerId\",\n            \"name\": \"制造商ID\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"terminalModel\",\n            \"name\": \"终端型号\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"terminalId\",\n            \"name\": \"终端ID\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"terminalSimICCID\",\n            \"name\": \"终端SIM卡ICCID\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"terminalHardwareVersion\",\n            \"name\": \"终端硬件版本号\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"terminalFirmwareVersion\",\n            \"name\": \"终端固件版本号\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"gnssModuleAttributes\",\n            \"name\": \"GNSS模块属性\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"communicationModuleAttributes\",\n            \"name\": \"通信模块属性\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          }\n        ]\n      },\n      \"inputs\": []\n    },\n    {\n      \"id\": \"temporaryPositionTrackingControl\",\n      \"name\": \"临时跟踪控制\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"timeInterval\",\n          \"name\": \"时间间隔\",\n          \"valueType\": {\n            \"type\": \"int\",\n            \"unit\": \"seconds\"\n          },\n          \"description\": \"时间间隔为0时停止跟踪\"\n        },\n        {\n          \"id\": \"validityPeriod\",\n          \"name\": \"位置跟踪有效期\",\n          \"valueType\": {\n            \"type\": \"int\",\n            \"unit\": \"seconds\"\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"confirmTheAlarm\",\n      \"name\": \"人工确认报警消息\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"serialNumber\",\n          \"name\": \"报警消息流水号\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0表示该报警类所有的消息\"\n        },\n        {\n          \"id\": \"confirmTheAlarmType\",\n          \"name\": \"人工确认报警类型\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0 确认紧急报警\\n3 确认危险报警\\n20 确认进出区域报警\\n21 确认进出路线报警\\n22 确认路段行驶时间不足/过长报警\\n27 确认车辆非法点火报警\\n28 确认车辆非法位移报警\"\n        }\n      ]\n    },\n    {\n      \"id\": \"callBack\",\n      \"name\": \"电话回拨\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"sign\",\n          \"name\": \"标志\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0 普通通话 \\n1 监听\"\n        },\n        {\n          \"id\": \"mobileNo\",\n          \"name\": \"电话号码\",\n          \"valueType\": {\n            \"type\": \"string\"\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"setUpPhoneBook\",\n      \"name\": \"设置电话本\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"SettingType\",\n          \"name\": \"设置类型\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0 删除终端上所有存储的联系人\\n1 表示更新电话本\\n2 表示追加电话本\\n3 表示修改电话本（以联系人为索引）\"\n        },\n        {\n          \"id\": \"contactItem\",\n          \"name\": \"联系人项\",\n          \"valueType\": {\n            \"type\": \"array\",\n            \"expands\": {\n              \"elementType\": {\n                \"type\": \"object\"\n              }\n            }\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"vehicleControl\",\n      \"name\": \"车辆控制\",\n      \"async\": true,\n      \"output\": {\n        \"type\": \"object\",\n        \"properties\": [\n          {\n            \"id\": \"replySerialNumber\",\n            \"name\": \"应答流水号\",\n            \"valueType\": {\n              \"type\": \"int\"\n            }\n          }\n        ]\n      },\n      \"inputs\": [\n        {\n          \"id\": \"controlParameters\",\n          \"name\": \"控制参数\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0 车门锁闭\\n1 车门开启\"\n        }\n      ]\n    },\n    {\n      \"id\": \"setCircularArea\",\n      \"name\": \"设置圆形区域\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"setProperties\",\n          \"name\": \"设置属性\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0 更新区域\\n1 追加区域\\n2 修改区域\"\n        },\n        {\n          \"id\": \"areaItem\",\n          \"name\": \"区域项\",\n          \"valueType\": {\n            \"type\": \"array\",\n            \"expands\": {\n              \"elementType\": {\n                \"type\": \"object\"\n              }\n            }\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"deleteCircularArea\",\n      \"name\": \"删除圆形区域\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"areaID\",\n          \"name\": \"区域ID集合\",\n          \"valueType\": {\n            \"type\": \"array\",\n            \"expands\": {\n              \"elementType\": {\n                \"type\": \"int\"\n              }\n            }\n          },\n          \"description\": \"0为删除所有圆形区域\\n最多125个区域ID\"\n        }\n      ]\n    },\n    {\n      \"id\": \"setRectangularArea\",\n      \"name\": \"设置矩形区域\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"setProperties\",\n          \"name\": \"设置属性\",\n          \"valueType\": {\n            \"type\": \"int\"\n          }\n        },\n        {\n          \"id\": \"areaItem\",\n          \"name\": \"区域项\",\n          \"valueType\": {\n            \"type\": \"array\",\n            \"expands\": {\n              \"elementType\": {\n                \"type\": \"object\"\n              }\n            }\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"deleteRectangularArea\",\n      \"name\": \"删除矩形区域\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"areaID\",\n          \"name\": \"区域ID集合\",\n          \"valueType\": {\n            \"type\": \"array\",\n            \"expands\": {\n              \"elementType\": {\n                \"type\": \"int\"\n              }\n            }\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"setPolygonArea\",\n      \"name\": \"设置多边形区域\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"areaID\",\n          \"name\": \"区域ID\",\n          \"valueType\": {\n            \"type\": \"int\"\n          }\n        },\n        {\n          \"id\": \"attributes\",\n          \"name\": \"区域属性\",\n          \"valueType\": {\n            \"type\": \"array\",\n            \"expands\": {\n              \"elementType\": {\n                \"type\": \"int\"\n              }\n            }\n          }\n        },\n        {\n          \"id\": \"vertexTerm\",\n          \"name\": \"顶点项\",\n          \"valueType\": {\n            \"type\": \"array\",\n            \"expands\": {\n              \"elementType\": {\n                \"type\": \"object\"\n              }\n            }\n          }\n        },\n        {\n          \"id\": \"areaName\",\n          \"name\": \"区域名称\",\n          \"valueType\": {\n            \"type\": \"string\"\n          }\n        },\n        {\n          \"id\": \"startTime\",\n          \"name\": \"起始时间\",\n          \"valueType\": {\n            \"type\": \"date\"\n          }\n        },\n        {\n          \"id\": \"endTime\",\n          \"name\": \"结束时间\",\n          \"valueType\": {\n            \"type\": \"date\"\n          }\n        },\n        {\n          \"id\": \"maximumSpeedspeed\",\n          \"name\": \"最高速度\",\n          \"valueType\": {\n            \"type\": \"int\",\n            \"unit\": \"kmPerHr\"\n          }\n        },\n        {\n          \"id\": \"overspeedDuration\",\n          \"name\": \"超速持续时间\",\n          \"valueType\": {\n            \"type\": \"int\",\n            \"unit\": \"seconds\"\n          }\n        },\n        {\n          \"id\": \"speedAtNight\",\n          \"name\": \"夜间最高速度\",\n          \"valueType\": {\n            \"type\": \"int\",\n            \"unit\": \"kmPerHr\"\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"deletePolygonArea\",\n      \"name\": \"删除多边形区域\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"areaID\",\n          \"name\": \"区域ID集合\",\n          \"valueType\": {\n            \"type\": \"array\",\n            \"expands\": {\n              \"elementType\": {\n                \"type\": \"int\"\n              }\n            }\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"setRoute\",\n      \"name\": \"设置路线\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"routeID\",\n          \"name\": \"路线ID\",\n          \"valueType\": {\n            \"type\": \"int\"\n          }\n        },\n        {\n          \"id\": \"attributes\",\n          \"name\": \"路线属性\",\n          \"valueType\": {\n            \"type\": \"array\",\n            \"expands\": {\n              \"elementType\": {\n                \"type\": \"int\"\n              }\n            }\n          },\n          \"description\": \"0 启用起始时间与结束时间的判断规则\\n2 进路线报警给驾驶员\\n3 进路线报警给平台\\n4 出路线报警给驾驶员\\n5 出路线报警给平台\"\n        },\n        {\n          \"id\": \"inflectionPoint\",\n          \"name\": \"拐点项\",\n          \"valueType\": {\n            \"type\": \"array\",\n            \"expands\": {\n              \"elementType\": {\n                \"type\": \"object\"\n              }\n            }\n          }\n        },\n        {\n          \"id\": \"routeName\",\n          \"name\": \"路线名称\",\n          \"valueType\": {\n            \"type\": \"string\"\n          }\n        },\n        {\n          \"id\": \"startTime\",\n          \"name\": \"起始时间\",\n          \"valueType\": {\n            \"type\": \"date\"\n          }\n        },\n        {\n          \"id\": \"endTime\",\n          \"name\": \"结束时间\",\n          \"valueType\": {\n            \"type\": \"date\"\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"deleteRoute\",\n      \"name\": \"删除路线\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"routeID\",\n          \"name\": \"路线ID集合\",\n          \"valueType\": {\n            \"type\": \"array\",\n            \"expands\": {\n              \"elementType\": {\n                \"type\": \"int\"\n              }\n            }\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"informationReportRequest\",\n      \"name\": \"上报驾驶员身份信息请求\",\n      \"async\": true,\n      \"output\": {\n        \"type\": \"object\",\n        \"properties\": [\n          {\n            \"id\": \"driverStatus\",\n            \"name\": \"状态\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"driverTime\",\n            \"name\": \"插卡/拔卡时间\",\n            \"valueType\": {\n              \"type\": \"date\"\n            }\n          },\n          {\n            \"id\": \"readingResult\",\n            \"name\": \"IC卡读取结果\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"driverName\",\n            \"name\": \"驾驶员姓名\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"certificateCode\",\n            \"name\": \"从业资格证编码\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"institutionName\",\n            \"name\": \"发证机构名称\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"validPeriod\",\n            \"name\": \"证件有效期\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"identityNumber\",\n            \"name\": \"驾驶员身份证号\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          }\n        ]\n      },\n      \"inputs\": []\n    },\n    {\n      \"id\": \"shootNow\",\n      \"name\": \"摄像头立即拍摄\",\n      \"async\": true,\n      \"output\": {\n        \"type\": \"object\",\n        \"properties\": [\n          {\n            \"id\": \"replySerialNumber\",\n            \"name\": \"应答流水号\",\n            \"valueType\": {\n              \"type\": \"int\"\n            }\n          },\n          {\n            \"id\": \"result\",\n            \"name\": \"结果\",\n            \"valueType\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"id\": \"list\",\n            \"name\": \"ID列表\",\n            \"valueType\": {\n              \"type\": \"array\",\n              \"expands\": {\n                \"elementType\": {\n                  \"type\": \"int\"\n                }\n              }\n            }\n          }\n        ]\n      },\n      \"inputs\": [\n        {\n          \"id\": \"channelID\",\n          \"name\": \"通道ID\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"值大于0\"\n        },\n        {\n          \"id\": \"shootingOrder\",\n          \"name\": \"拍摄命令\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0: 停止拍摄;\\n0xFFFF:录像;\\n其他:拍照张数\\n\"\n        },\n        {\n          \"id\": \"intervalTime\",\n          \"name\": \"拍照间隔/录像时间\",\n          \"valueType\": {\n            \"type\": \"int\",\n            \"unit\": \"seconds\"\n          },\n          \"description\": \"0表示按最小间隔拍照或一直录像\"\n        },\n        {\n          \"id\": \"saveFlag\",\n          \"name\": \"保存标志\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"1:保存;\\n0:实时上传\"\n        },\n        {\n          \"id\": \"resolution\",\n          \"name\": \"分辨率\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0x00:最低分辨率；\\n0x01:320x240;\\n0x02:640x480;\\n0x03:800x600;\\n0x04:1024x768;\\n0x05:176x144[Qcif];\\n0x06:352x288[Cif];\\n0x07:704x288[HALF D1];\\n0x08:704x576[D1];\\n0xff:最高分辨率\"\n        },\n        {\n          \"id\": \"imageVideoQuality\",\n          \"name\": \"图像/视频质量\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"取值范围1~10，1代表质量损失最小，10表示压缩比最大\"\n        },\n        {\n          \"id\": \"brightness\",\n          \"name\": \"亮度\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0~255\"\n        },\n        {\n          \"id\": \"contrast\",\n          \"name\": \"对比度\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0~127\"\n        },\n        {\n          \"id\": \"saturation\",\n          \"name\": \"饱和度\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0~127\"\n        },\n        {\n          \"id\": \"chroma\",\n          \"name\": \"色度\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0~255\"\n        }\n      ]\n    },\n    {\n      \"id\": \"multimediaDataUploadCommand\",\n      \"name\": \"存储多媒体数据上传\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"multimediaType\",\n          \"name\": \"多媒体类型\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0：图像；1：音频；2：视频\"\n        },\n        {\n          \"id\": \"channelID\",\n          \"name\": \"通道ID\",\n          \"valueType\": {\n            \"type\": \"int\"\n          }\n        },\n        {\n          \"id\": \"eventItemCoding\",\n          \"name\": \"事件项编码\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0：平台下发指令；1：定时动作；2：抢劫触发报警；3：碰撞侧翻触发报警\"\n        },\n        {\n          \"id\": \"startTime\",\n          \"name\": \"起始时间\",\n          \"valueType\": {\n            \"type\": \"date\"\n          }\n        },\n        {\n          \"id\": \"endTime\",\n          \"name\": \"结束时间\",\n          \"valueType\": {\n            \"type\": \"date\"\n          }\n        },\n        {\n          \"id\": \"deleteFlag\",\n          \"name\": \"删除标志\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0：保留；1：删除\"\n        }\n      ]\n    },\n    {\n      \"id\": \"recordStartCommand\",\n      \"name\": \"录音开始\",\n      \"async\": true,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"recordingCommand\",\n          \"name\": \"录音命令\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0：停止录音；0x01：开始录音\"\n        },\n        {\n          \"id\": \"recordingTime\",\n          \"name\": \"录音时间\",\n          \"valueType\": {\n            \"type\": \"int\",\n            \"unit\": \"seconds\"\n          },\n          \"description\": \"0表示一直录音\"\n        },\n        {\n          \"id\": \"saveFlag\",\n          \"name\": \"保存标志\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0：实时上传；1：保存\"\n        },\n        {\n          \"id\": \"audioSamplingRate\",\n          \"name\": \"音频采样率\",\n          \"valueType\": {\n            \"type\": \"int\"\n          },\n          \"description\": \"0:8K; 1:11K; 2:23k; 3:32K\"\n        }\n      ]\n    }\n  ],\n  \"tags\": []\n}",
+        "transportProtocol": "HTTP",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1611627428810,
+        "orgId": ""
+    },
+    {
+        "id": "6789",
+        "name": "test",
+        "describe": "yoyoyo",
+        "classifiedId": "786",
+        "classifiedName": "xinfu",
+        "messageProtocol": "jetlinks-edge-v1",
+        "protocolName": "JetLinks融合网关1.0",
+        "metadata": "{\"events\":[],\"properties\":[{\"valueType\":{\"unit\":\"percent\",\"round\":\"HALF_UP\",\"scale\":1,\"type\":\"float\"},\"name\":\"CPU使用率\",\"id\":\"cpuUsage\",\"expands\":{\"readOnly\":\"true\"}},{\"valueType\":{\"unit\":\"percent\",\"round\":\"HALF_UP\",\"type\":\"float\"},\"name\":\"JVM内存使用率\",\"id\":\"jvmMemUsage\",\"expands\":{\"readOnly\":\"true\"}},{\"valueType\":{\"unit\":\"percent\",\"round\":\"HALF_UP\",\"scale\":1,\"type\":\"float\"},\"name\":\"系统内存使用率\",\"id\":\"sysMemUsage\",\"expands\":{\"readOnly\":\"true\"}},{\"valueType\":{\"unit\":\"percent\",\"round\":\"HALF_UP\",\"scale\":1,\"type\":\"float\"},\"name\":\"磁盘使用率\",\"id\":\"diskUsage\",\"expands\":{\"readOnly\":\"true\"}},{\"valueType\":{\"unit\":\"celsiusDegrees\",\"round\":\"HALF_UP\",\"type\":\"int\"},\"name\":\"CPU温度\",\"id\":\"cpuTemp\",\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"bbb\",\"name\":\"dasd\",\"valueType\":{\"type\":\"int\",\"unit\":\"percent\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\"}}],\"functions\":[{\"async\":true,\"inputs\":[],\"name\":\"重启\",\"id\":\"restart\"}],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "网关设备",
+            "value": "gateway"
+        },
+        "state": 1,
+        "creatorId": "11f0075aa18835be6217f52902985c75",
+        "createTime": 1633661727541,
+        "orgId": "",
+        "storePolicy": "default-column"
+    },
+    {
+        "id": "666666666666",
+        "name": "6666",
+        "classifiedId": "|41|",
+        "classifiedName": "智能生活",
+        "messageProtocol": "gb28181-2016",
+        "protocolName": "GB28181/2016",
+        "metadata": "{\"events\":[{\"valueType\":{\"type\":\"object\",\"properties\":[{\"valueType\":{\"elements\":[{\"text\":\"全部\",\"value\":\"0\"},{\"text\":\"一级\",\"value\":\"1\"},{\"text\":\"二级\",\"value\":\"2\"},{\"text\":\"三级\",\"value\":\"3\"},{\"text\":\"四级\",\"value\":\"4\"}],\"type\":\"enum\"},\"name\":\"告警级别\",\"id\":\"AlarmPriority\"},{\"valueType\":{\"elements\":[{\"text\":\"全部\",\"value\":\"0\"},{\"text\":\"电话报警\",\"value\":\"1\"},{\"text\":\"设备报警\",\"value\":\"2\"},{\"text\":\"短信报警\",\"value\":\"3\"},{\"text\":\"GPS报警\",\"value\":\"4\"},{\"text\":\"视频报警\",\"value\":\"5\"},{\"text\":\"设备故障报警\",\"value\":\"6\"},{\"text\":\"其他报警\",\"value\":\"7\"}],\"type\":\"enum\"},\"name\":\"报警方式\",\"id\":\"AlarmMethod\"},{\"valueType\":{\"tz\":\"Asia/Shanghai\",\"format\":\"yyyy-MM-dd'T'HH:mm:ss\",\"type\":\"date\"},\"name\":\"报警时间\",\"id\":\"AlarmTime\"},{\"valueType\":{\"lonProperty\":\"lon\",\"type\":\"geoPoint\",\"latProperty\":\"lat\"},\"name\":\"经纬度\",\"id\":\"lonlat\"},{\"valueType\":{\"expands\":{\"maxLength\":\"\"},\"type\":\"string\"},\"name\":\"报警类型\",\"id\":\"AlarmType\"},{\"valueType\":{\"type\":\"string\"},\"name\":\"报警类型拓展参数\",\"id\":\"AlarmTypeParam\"},{\"valueType\":{\"expands\":{\"maxLength\":\"100\"},\"type\":\"string\"},\"name\":\"报警类型说明\",\"id\":\"AlarmTypeText\"},{\"valueType\":{\"type\":\"string\"},\"name\":\"报警设备ID\",\"id\":\"Channel\"}]},\"name\":\"报警\",\"id\":\"Alarm\",\"expands\":{\"level\":\"ordinary\"}}],\"properties\":[],\"functions\":[{\"async\":false,\"inputs\":[{\"valueType\":{\"elements\":[{\"text\":\"全部\",\"value\":\"0\"},{\"text\":\"一级警情\",\"value\":\"1\"},{\"text\":\"二级警情\",\"value\":\"2\"},{\"text\":\"三级警情\",\"value\":\"3\"},{\"text\":\"四级警情\",\"value\":\"4\"}],\"type\":\"enum\"},\"name\":\"报警起始级别\",\"id\":\"StartAlarmPriority\"},{\"valueType\":{\"elements\":[{\"text\":\"全部\",\"value\":\"0\"},{\"text\":\"一级警情\",\"value\":\"1\"},{\"text\":\"二级警情\",\"value\":\"2\"},{\"text\":\"三级警情\",\"value\":\"3\"},{\"text\":\"四级警情\",\"value\":\"4\"}],\"type\":\"enum\"},\"name\":\"报警中止级别\",\"id\":\"EndAlarmPriority\"},{\"valueType\":{\"type\":\"string\"},\"name\":\"报警方式\",\"description\":\"报警方式条件(可选),取值\\n0为全部,\\n1为电话报警,\\n2为设备报警,\\n3为短信报警,\\n 4为GPS报警,\\n 5为视频报警,\\n6为设备故障报警,\\n7其他报警;\\n可以为直接组合如12为电话报警或设备报警\",\"id\":\"AlarmMethod\"},{\"valueType\":{\"tz\":\"Asia/Shanghai\",\"format\":\"yyyy-MM-dd'T'HH:mm:ss\",\"type\":\"date\"},\"name\":\"报警起始时间\",\"id\":\"StartAlarmTime\"},{\"valueType\":{\"tz\":\"Asia/Shanghai\",\"format\":\"yyyy-MM-dd'T'HH:mm:ss\",\"type\":\"date\"},\"name\":\"报警截止时间\",\"id\":\"EndAlarmTime\"}],\"name\":\"订阅报警\",\"id\":\"SubscribeAlarm\"},{\"output\":{\"type\":\"object\",\"properties\":[{\"valueType\":{\"type\":\"string\"},\"name\":\"流ID\",\"id\":\"streamId\"},{\"valueType\":{\"type\":\"string\"},\"name\":\"FLV播放地址\",\"id\":\"flv\"},{\"valueType\":{\"type\":\"string\"},\"name\":\"mp4播放地址\",\"id\":\"mp4\"},{\"valueType\":{\"type\":\"string\"},\"name\":\"hls播放地址\",\"id\":\"hls\"}]},\"async\":true,\"inputs\":[{\"valueType\":{\"type\":\"string\"},\"name\":\"通道ID\",\"id\":\"channel\"}],\"name\":\"开始直播\",\"id\":\"StartPushStreaming\"},{\"output\":{\"type\":\"object\",\"properties\":[{\"valueType\":{\"type\":\"array\",\"elementType\":{\"type\":\"object\",\"properties\":[{\"valueType\":{\"unit\":\"seconds\",\"min\":0,\"max\":2147483647,\"expands\":{\"step\":\"1\"},\"type\":\"int\"},\"name\":\"开始时间\",\"id\":\"BeginTime\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"unit\":\"seconds\",\"min\":0,\"max\":2147483647,\"expands\":{\"step\":\"1\"},\"type\":\"int\"},\"name\":\"结束时间\",\"id\":\"EndTime\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"elements\":[{\"text\":\"计划录像\",\"value\":\"0\"},{\"text\":\"报警录像\",\"value\":\"1\"},{\"text\":\"主动录像\",\"value\":\"2\"}],\"type\":\"enum\"},\"name\":\"录像类型\",\"id\":\"Type\",\"expands\":{\"readOnly\":false}}]}},\"name\":\"时间列表\",\"id\":\"TimeList\",\"expands\":{\"readOnly\":false}}]},\"async\":false,\"inputs\":[{\"valueType\":{\"unit\":\"angleSeconds\",\"min\":0,\"max\":2147483647,\"expands\":{\"step\":\"1\"},\"type\":\"int\"},\"name\":\"开始时间\",\"id\":\"BeginTime\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"unit\":\"angleSeconds\",\"min\":0,\"max\":2147483647,\"expands\":{\"step\":\"1\"},\"type\":\"int\"},\"name\":\"结束时间\",\"id\":\"EndTime\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"min\":0,\"max\":128,\"expands\":{\"step\":\"1\"},\"type\":\"int\"},\"name\":\"查询数量\",\"id\":\"QuerySize\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"elements\":[{\"text\":\"计划录像\",\"value\":\"0\"},{\"text\":\"所有类型\",\"value\":\"99\"},{\"text\":\"报警录像\",\"value\":\"1\"},{\"text\":\"主动录像\",\"value\":\"2\"}],\"type\":\"enum\"},\"name\":\"录像类型\",\"id\":\"Type\",\"expands\":{\"readOnly\":false}}],\"name\":\"查询录像时间列表\",\"id\":\"QueryRecordTimeList\"},{\"async\":false,\"inputs\":[{\"valueType\":{\"type\":\"string\"},\"name\":\"通道ID\",\"id\":\"channel\"},{\"valueType\":{\"type\":\"int\"},\"name\":\"速度\",\"id\":\"speed\"},{\"valueType\":{\"elements\":[{\"text\":\"向上\",\"value\":\"UP\"},{\"text\":\"向下\",\"value\":\"DOWN\"},{\"text\":\"向左\",\"value\":\"LEFT\"},{\"text\":\"向右\",\"value\":\"RIGHT\"},{\"text\":\"放大\",\"value\":\"ZOOM_IN\"},{\"text\":\"缩小\",\"value\":\"ZOOM_OUT\"},{\"text\":\"停止\",\"value\":\"STOP\"}],\"type\":\"enum\"},\"name\":\"操作\",\"id\":\"direct\"},{\"valueType\":{\"type\":\"object\",\"properties\":[]},\"name\":\"批量操作\",\"id\":\"directs\"}],\"name\":\"云台控制\",\"id\":\"PTZ\"},{\"output\":{\"type\":\"object\",\"properties\":[{\"valueType\":{\"expands\":{\"length\":\"128\"},\"type\":\"string\"},\"name\":\"图片ID\",\"id\":\"PicID\",\"expands\":{\"readOnly\":false}}]},\"async\":true,\"inputs\":[{\"valueType\":{\"expands\":{\"length\":\"2048\"},\"type\":\"string\"},\"name\":\"上传地址\",\"id\":\"UploadUrl\",\"expands\":{\"readOnly\":false}}],\"name\":\"触发设备抓图\",\"id\":\"TriggerPicCapture\"},{\"async\":true,\"inputs\":[{\"valueType\":{\"min\":0,\"max\":9999,\"expands\":{\"step\":\"1\"},\"type\":\"int\"},\"name\":\"加密类型\",\"id\":\"EncryptType\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"expands\":{\"length\":\"255\"},\"type\":\"string\"},\"name\":\"密钥\",\"id\":\"EncryptKey\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"elements\":[{\"text\":\"RTMP\",\"value\":\"0\"},{\"text\":\"RTSP\",\"value\":\"1\"}],\"type\":\"enum\"},\"name\":\"流协议\",\"id\":\"Scheme\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"expands\":{\"length\":\"512\"},\"type\":\"string\"},\"name\":\"推流地址\",\"id\":\"PushUrl\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"expands\":{\"length\":\"255\"},\"type\":\"string\"},\"name\":\"会话ID\",\"id\":\"SessionID\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"unit\":\"angleSeconds\",\"min\":0,\"max\":2147483647,\"expands\":{\"step\":\"1\"},\"type\":\"int\"},\"name\":\"开始时间\",\"id\":\"BeginTime\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"unit\":\"angleSeconds\",\"min\":0,\"max\":2147483647,\"expands\":{\"step\":\"1\"},\"type\":\"int\"},\"name\":\"结束时间\",\"id\":\"EndTime\",\"expands\":{\"readOnly\":false}}],\"name\":\"开始录像按时间观看\",\"id\":\"StartVodByTime\"},{\"async\":true,\"inputs\":[{\"valueType\":{\"type\":\"string\"},\"name\":\"流ID\",\"id\":\"streamId\"}],\"name\":\"停止直播\",\"id\":\"StopPushStreaming\"},{\"output\":{\"type\":\"object\",\"properties\":[{\"valueType\":{\"expands\":{\"maxLength\":\"1024\"},\"type\":\"string\"},\"name\":\"响应sdp结果\",\"id\":\"sdp\"}]},\"async\":false,\"inputs\":[{\"valueType\":{\"type\":\"string\"},\"name\":\"通道\",\"id\":\"channel\"},{\"valueType\":{\"expands\":{\"maxLength\":\"200\"},\"type\":\"string\"},\"name\":\"级联ID\",\"id\":\"cascadeId\"},{\"valueType\":{\"expands\":{\"maxLength\":\"1024\"},\"type\":\"string\"},\"name\":\"推流地址\",\"description\":\"推流地址,ip:port\",\"id\":\"address\"},{\"valueType\":{\"expands\":{\"maxLength\":\"1024\"},\"type\":\"string\"},\"name\":\"指令ID\",\"id\":\"callId\"},{\"valueType\":{\"expands\":{\"maxLength\":\"32\"},\"type\":\"string\"},\"name\":\"SSRC\",\"id\":\"ssrc\"},{\"valueType\":{\"expands\":{\"maxLength\":\"5120\"},\"type\":\"string\"},\"name\":\"流描述信息\",\"id\":\"mediaDescription\"}],\"name\":\"开始级联推流\",\"description\":\"此功能由系统内部发起调用\",\"id\":\"StartCascadePushStreaming\"},{\"output\":{\"type\":\"object\",\"properties\":[{\"valueType\":{\"type\":\"array\",\"elementType\":{\"type\":\"object\",\"properties\":[{\"valueType\":{\"expands\":{\"length\":\"255\"},\"type\":\"string\"},\"name\":\"录像名\",\"id\":\"FileName\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"unit\":\"seconds\",\"min\":0,\"max\":2147483647,\"expands\":{\"step\":\"1\"},\"type\":\"int\"},\"name\":\"开始时间\",\"id\":\"BeginTime\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"unit\":\"seconds\",\"min\":0,\"max\":2147483647,\"expands\":{\"step\":\"1\"},\"type\":\"int\"},\"name\":\"结束时间\",\"id\":\"EndTime\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"expands\":{\"length\":\"255\"},\"type\":\"string\"},\"name\":\"文件大小\",\"id\":\"Size\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"elements\":[{\"text\":\"计划录像\",\"value\":\"0\"},{\"text\":\"报警录像\",\"value\":\"1\"},{\"text\":\"主动录像\",\"value\":\"2\"}],\"type\":\"enum\"},\"name\":\"录像类型\",\"id\":\"Type\",\"expands\":{\"readOnly\":false}}]}},\"name\":\"录像列表\",\"id\":\"RecordList\",\"expands\":{\"readOnly\":false}}]},\"async\":false,\"inputs\":[{\"valueType\":{\"unit\":\"seconds\",\"min\":0,\"max\":2147483647,\"expands\":{\"step\":\"1\"},\"type\":\"int\"},\"name\":\"开始时间\",\"id\":\"BeginTime\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"unit\":\"seconds\",\"min\":0,\"max\":2147483647,\"expands\":{\"step\":\"1\"},\"type\":\"int\"},\"name\":\"结束时间\",\"id\":\"EndTime\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"elements\":[{\"text\":\"计划录像\",\"value\":\"0\"},{\"text\":\"所有类型\",\"value\":\"99\"},{\"text\":\"报警录像\",\"value\":\"1\"},{\"text\":\"主动录像\",\"value\":\"2\"}],\"type\":\"enum\"},\"name\":\"录像类型\",\"id\":\"Type\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"min\":0,\"max\":128,\"expands\":{\"step\":\"1\"},\"type\":\"int\"},\"name\":\"查询数量\",\"id\":\"QuerySize\",\"expands\":{\"readOnly\":false}}],\"name\":\"查询录像列表\",\"id\":\"QueryRecordList\"},{\"async\":true,\"inputs\":[],\"name\":\"重启\",\"id\":\"Reboot\"},{\"async\":true,\"inputs\":[{\"valueType\":{\"expands\":{\"length\":\"255\"},\"type\":\"string\"},\"name\":\"录像名\",\"id\":\"FileName\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"expands\":{\"length\":\"255\"},\"type\":\"string\"},\"name\":\"会话ID\",\"id\":\"SessionID\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"expands\":{\"length\":\"512\"},\"type\":\"string\"},\"name\":\"推流地址\",\"id\":\"PushUrl\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"elements\":[{\"text\":\"RTMP\",\"value\":\"0\"},{\"text\":\"RTSP\",\"value\":\"1\"}],\"type\":\"enum\"},\"name\":\"流协议\",\"id\":\"Scheme\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"expands\":{\"length\":\"255\"},\"type\":\"string\"},\"name\":\"密钥\",\"id\":\"EncryptKey\",\"expands\":{\"readOnly\":false}},{\"valueType\":{\"min\":0,\"max\":9999,\"expands\":{\"step\":\"1\"},\"type\":\"int\"},\"name\":\"加密类型\",\"id\":\"EncryptType\",\"expands\":{\"readOnly\":false}}],\"name\":\"开始录像观看\",\"id\":\"StartVod\"},{\"async\":true,\"inputs\":[{\"valueType\":{\"type\":\"string\"},\"name\":\"级联ID\",\"id\":\"cascadeId\"},{\"valueType\":{\"type\":\"string\"},\"name\":\"指令ID\",\"id\":\"callId\"}],\"name\":\"停止级联推流\",\"id\":\"StopCascadePushStreaming\"}]}",
+        "transportProtocol": "UDP",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "state": 1,
+        "creatorId": "1390591254016729088",
+        "createTime": 1620378187704,
+        "orgId": "A"
+    },
+    {
+        "id": "645-ty-nb-v1",
+        "name": "泰易-电表",
+        "classifiedId": "|41|58|191|",
+        "classifiedName": "智能电表",
+        "messageProtocol": "1384039819811004416",
+        "protocolName": "泰易电表",
+        "metadata": "{\"events\":[],\"properties\":[{\"id\":\"00010000\",\"name\":\"正向有功总电量\",\"valueType\":{\"type\":\"double\",\"scale\":2,\"unit\":\"kWattsHour\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"02010100\",\"name\":\"电压\",\"valueType\":{\"type\":\"double\",\"scale\":1,\"unit\":\"volt\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"02020100\",\"name\":\"电流\",\"valueType\":{\"type\":\"double\",\"scale\":3,\"unit\":\"ampere\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"0203FF00\",\"name\":\"功率\",\"valueType\":{\"type\":\"double\",\"scale\":4,\"unit\":\"kilowatt\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"0206FF00\",\"name\":\"功率因数\",\"valueType\":{\"type\":\"double\",\"scale\":3},\"expands\":{\"readOnly\":\"true\"}}],\"functions\":[],\"tags\":[]}",
+        "transportProtocol": "TCP",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1618815881163,
+        "orgId": "立体科技大厦"
+    },
+    {
+        "id": "3123",
+        "name": "333ffewq",
+        "photoUrl": "http://demo.jetlinks.cn/jetlinks/upload/20211124/1463410226454323200.png",
+        "describe": "fqwefq",
+        "classifiedId": "|41|66|407|",
+        "messageProtocol": "yalixieyi1350",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "state": 0,
+        "creatorId": "1199596756811550720",
+        "createTime": 1637739178726,
+        "orgId": "1446383202985811968"
+    },
+    {
+        "id": "213213",
+        "name": "333",
+        "photoUrl": "http://demo.jetlinks.cn/jetlinks/upload/20211124/1463410825124110336.png",
+        "describe": "12321",
+        "classifiedId": "|258|413|",
+        "messageProtocol": "yalixieyi1350",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "state": 0,
+        "creatorId": "1199596756811550720",
+        "createTime": 1637739316819,
+        "orgId": "1446383202985811968",
+        "storePolicy": "influx-column"
+    },
+    {
+        "id": "2121ce",
+        "name": "123112",
+        "classifiedId": "|45|",
+        "classifiedName": "智能工业",
+        "messageProtocol": "jetlinks-edge-v1",
+        "protocolName": "JetLinks融合网关1.0",
+        "metadata": "{\"functions\":[{\"async\":true,\"inputs\":[],\"name\":\"重启\",\"id\":\"restart\"}],\"properties\":[{\"valueType\":{\"unit\":\"percent\",\"round\":\"HALF_UP\",\"scale\":1,\"type\":\"float\"},\"name\":\"CPU使用率\",\"id\":\"cpuUsage\",\"expands\":{\"readOnly\":\"true\"}},{\"valueType\":{\"unit\":\"percent\",\"round\":\"HALF_UP\",\"type\":\"float\"},\"name\":\"JVM内存使用率\",\"id\":\"jvmMemUsage\",\"expands\":{\"readOnly\":\"true\"}},{\"valueType\":{\"unit\":\"percent\",\"round\":\"HALF_UP\",\"scale\":1,\"type\":\"float\"},\"name\":\"系统内存使用率\",\"id\":\"sysMemUsage\",\"expands\":{\"readOnly\":\"true\"}},{\"valueType\":{\"unit\":\"percent\",\"round\":\"HALF_UP\",\"scale\":1,\"type\":\"float\"},\"name\":\"磁盘使用率\",\"id\":\"diskUsage\",\"expands\":{\"readOnly\":\"true\"}},{\"valueType\":{\"unit\":\"celsiusDegrees\",\"round\":\"HALF_UP\",\"type\":\"int\"},\"name\":\"CPU温度\",\"id\":\"cpuTemp\",\"expands\":{\"readOnly\":\"true\"}}],\"events\":[],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "state": 0,
+        "creatorId": "1199596756811550720",
+        "createTime": 1641889089613,
+        "orgId": ""
+    },
+    {
+        "id": "1236859833832701953",
+        "name": "智能温度控制传感器",
+        "describe": "测试",
+        "classifiedId": "|1|2|3|",
+        "classifiedName": "路灯照明",
+        "messageProtocol": "demo",
+        "protocolName": "内置协议（勿动）",
+        "metadata": "{\"events\":[{\"id\":\"fire_alarm\",\"name\":\"火警报警\",\"expands\":{\"eventType\":\"reportData\",\"level\":\"urgent\"},\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"a_name\",\"name\":\"区域名称\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"b_name\",\"name\":\"建筑名称\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"l_name\",\"name\":\"位置名称\",\"valueType\":{\"type\":\"string\"}}]}}],\"properties\":[{\"id\":\"temperature\",\"name\":\"温度\",\"valueType\":{\"type\":\"float\",\"min\":\"0\",\"max\":\"100\",\"step\":\"0.1\",\"unit\":\"celsiusDegrees\"},\"expands\":{\"readOnly\":\"true\"}}],\"functions\":[{\"id\":\"get-log\",\"name\":\"获取日志\",\"isAsync\":true,\"output\":{\"type\":\"string\",\"expands\":{\"maxLength\":\"2048\"}},\"inputs\":[{\"id\":\"start_date\",\"name\":\"开始日期\",\"valueType\":{\"type\":\"date\",\"dateFormat\":\"yyyy-MM-dd HH:mm:ss\"}},{\"id\":\"end_data\",\"name\":\"结束日期\",\"valueType\":{\"type\":\"date\",\"dateFormat\":\"yyyy-MM-dd HH:mm:ss\"}},{\"id\":\"time\",\"name\":\"分组\",\"valueType\":{\"type\":\"string\"}}]}]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "configuration": {
+            "username": "test",
+            "password": "test"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1593423044313,
+        "orgId": ""
+    },
+    {
+        "id": "123",
+        "name": "边缘计算网关q",
+        "describe": "qwerqwr",
+        "classifiedId": "|87|88|",
+        "classifiedName": "边缘网关",
+        "messageProtocol": "jetlinks-edge-v1",
+        "protocolName": "JetLinks融合网关1.0",
+        "metadata": "{\"events\":[{\"id\":\"test\",\"name\":\"测试\",\"expands\":{\"level\":\"ordinary\"},\"valueType\":{\"type\":\"int\"}}],\"properties\":[{\"id\":\"jvmMemUsage\",\"name\":\"JVM内存使用率\",\"valueType\":{\"type\":\"float\",\"unit\":\"percent\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"cpuUsage\",\"name\":\"CPU使用率\",\"valueType\":{\"type\":\"float\",\"scale\":1,\"unit\":\"percent\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\",\"storageType\":\"direct\"}},{\"id\":\"cpuTemp\",\"name\":\"CPU温度\",\"valueType\":{\"type\":\"int\",\"unit\":\"celsiusDegrees\"},\"expands\":{\"readOnly\":\"true\"}},{\"id\":\"sysMemUsage\",\"name\":\"系统内存使用率\",\"valueType\":{\"type\":\"float\",\"scale\":1,\"unit\":\"percent\"},\"expands\":{\"readOnly\":\"true\"}}],\"functions\":[{\"id\":\"restart\",\"name\":\"重启\",\"async\":true,\"output\":{},\"inputs\":[]}],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "state": 1,
+        "createTime": 1618198778289,
+        "orgId": ""
+    },
+    {
+        "id": "1224_CSCP",
+        "name": "1224测试验证告警产品",
+        "describe": "1224任务测试告警产品",
+        "classifiedId": "|87|",
+        "classifiedName": "边缘计算",
+        "messageProtocol": "off",
+        "protocolName": "官方2.0协议-【演示勿动】",
+        "metadata": "{\"events\":[],\"properties\":[{\"id\":\"temp\",\"name\":\"温度\",\"valueType\":{\"type\":\"float\"},\"expands\":{\"readOnly\":\"false\",\"source\":\"device\",\"storageType\":\"direct\"}}],\"functions\":[],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "configuration": {
+            "secureId": "admin",
+            "secureKey": "admin"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1640308430165,
+        "orgId": ""
+    },
+    {
+        "id": "1112_GF",
+        "name": "1112官方协议产品",
+        "classifiedId": "|41|",
+        "classifiedName": "智能生活",
+        "messageProtocol": "official-protocol",
+        "protocolName": "官方协议",
+        "metadata": "{\"events\":[{\"id\":\"aaaa\",\"name\":\"火灾\",\"expands\":{\"level\":\"urgent\"},\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"a\",\"name\":\"名臣\",\"valueType\":{\"type\":\"string\"}},{\"id\":\"b\",\"name\":\"世界\",\"valueType\":{\"type\":\"string\"}}]}}],\"properties\":[],\"functions\":[{\"id\":\"setuploadInervalTime\",\"name\":\"设置上传间隔时间\",\"async\":true,\"output\":{},\"inputs\":[{\"id\":\"uploadInervalTime\",\"name\":\"上传间隔时间是\",\"valueType\":{\"type\":\"int\"}}]}],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "configuration": {
+            "secureId": "admin",
+            "secureKey": "admin"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1636696299321,
+        "orgId": ""
+    },
+    {
+        "id": "1018_ZC",
+        "name": "1018中车设备",
+        "classifiedId": "|41|",
+        "classifiedName": "智能生活",
+        "messageProtocol": "1018_ZC",
+        "protocolName": "中车协议",
+        "metadata": "{\n  \"events\": [],\n  \"properties\": [\n    {\n      \"id\": \"_LOCATION_\",\n      \"name\": \"地理位置\",\n      \"valueType\": {\n        \"type\": \"geoPoint\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\",\n        \"longitude\": \"LNG\",\n        \"latitude\": \"LAT\"\n      }\n    },\n    {\n      \"id\": \"_COUNTRY_\",\n      \"name\": \"国家\",\n      \"valueType\": {\n        \"type\": \"string\",\n        \"expands\": {}\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    },\n    {\n      \"id\": \"_PROVINCE_\",\n      \"name\": \"省\",\n      \"valueType\": {\n        \"type\": \"string\",\n        \"expands\": {}\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    },\n    {\n      \"id\": \"_CITY_\",\n      \"name\": \"市\",\n      \"valueType\": {\n        \"type\": \"string\",\n        \"expands\": {}\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    },\n    {\n      \"id\": \"_DISTRICT_\",\n      \"name\": \"县\",\n      \"valueType\": {\n        \"type\": \"string\",\n        \"expands\": {}\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    },\n    {\n      \"id\": \"LNG\",\n      \"name\": \"GPS经度\",\n      \"valueType\": {\n        \"type\": \"string\",\n        \"expands\": {}\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    },\n    {\n      \"id\": \"LAT\",\n      \"name\": \"GPS纬度\",\n      \"valueType\": {\n        \"type\": \"string\",\n        \"expands\": {}\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    },\n    {\n      \"id\": \"BWC_ID\",\n      \"name\": \"设备编号\",\n      \"valueType\": {\n        \"type\": \"string\",\n        \"expands\": {}\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    },\n    {\n      \"id\": \"IMEI_ID\",\n      \"name\": \"IMEI编号\",\n      \"valueType\": {\n        \"type\": \"string\",\n        \"expands\": {}\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    },\n    {\n      \"id\": \"BAT\",\n      \"name\": \"电池电压\",\n      \"valueType\": {\n        \"type\": \"float\",\n        \"scale\": 2,\n        \"unit\": \"volt\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    },\n    {\n      \"id\": \"TIME\",\n      \"name\": \"上传频率\",\n      \"valueType\": {\n        \"type\": \"float\",\n        \"scale\": 2,\n        \"unit\": \"minutes\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    },\n    {\n      \"id\": \"MODE\",\n      \"name\": \"使用状态\",\n      \"valueType\": {\n        \"type\": \"long\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    },\n    {\n      \"id\": \"X\",\n      \"name\": \"X轴\",\n      \"valueType\": {\n        \"type\": \"long\",\n        \"unit\": \"mg\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    },\n    {\n      \"id\": \"Y\",\n      \"name\": \"Y轴\",\n      \"valueType\": {\n        \"type\": \"long\",\n        \"unit\": \"mg\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    },\n    {\n      \"id\": \"Z\",\n      \"name\": \"Z轴\",\n      \"valueType\": {\n        \"type\": \"long\",\n        \"unit\": \"mg\"\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    },\n    {\n      \"id\": \"TIMESTAMP_LOCAL\",\n      \"name\": \"TIMESTAMP_LOCAL\",\n      \"valueType\": {\n        \"type\": \"string\",\n        \"expands\": {}\n      },\n      \"expands\": {\n        \"readOnly\": \"true\",\n        \"source\": \"device\"\n      }\n    }\n  ],\n  \"functions\": [\n    {\n      \"id\": \"write\",\n      \"name\": \"写指令\",\n      \"async\": false,\n      \"output\": {},\n      \"description\": \"写指令\",\n      \"inputs\": [\n        {\n          \"id\": \"TIME\",\n          \"name\": \"上报时间\",\n          \"valueType\": {\n            \"type\": \"int\"\n          }\n        },\n        {\n          \"id\": \"T1_cali\",\n          \"name\": \"温度通道1校准值\",\n          \"valueType\": {\n            \"type\": \"double\",\n            \"scale\": 2\n          }\n        },\n        {\n          \"id\": \"T2_cali\",\n          \"name\": \"温度通道2校准值\",\n          \"valueType\": {\n            \"type\": \"double\",\n            \"scale\": 2\n          }\n        }\n      ]\n    },\n    {\n      \"id\": \"read\",\n      \"name\": \"读\",\n      \"async\": false,\n      \"output\": {},\n      \"inputs\": [\n        {\n          \"id\": \"Content\",\n          \"name\": \"内容\",\n          \"valueType\": {\n            \"type\": \"object\"\n          }\n        }\n      ]\n    }\n  ],\n  \"tags\": []\n}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "网关子设备",
+            "value": "childrenDevice"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1634543360924,
+        "orgId": "",
+        "storePolicy": "default-column"
+    },
+    {
+        "id": "1018_YZ",
+        "name": "1018验证产品",
+        "classifiedId": "|41|",
+        "classifiedName": "智能生活",
+        "messageProtocol": "mqtt-test-001",
+        "protocolName": "mqtt测试协议",
+        "metadata": "{\"events\":[],\"properties\":[{\"id\":\"temp\",\"name\":\"Test\",\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"A1\",\"name\":\"A1\",\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"B1\",\"name\":\"B1\",\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"C1\",\"name\":\"C1\",\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"D1\",\"name\":\"D1\",\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"E1\",\"name\":\"E1\",\"valueType\":{\"type\":\"float\",\"scale\":2,\"unit\":\"kilometer\"}},{\"id\":\"F1\",\"name\":\"F1\",\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"G1\",\"name\":\"G1\",\"valueType\":{\"type\":\"object\",\"properties\":[{\"id\":\"G2\",\"name\":\"G2\",\"valueType\":{\"type\":\"float\",\"scale\":2,\"unit\":\"percent\"}}]}}]}}]}}]}}]}}]}}]},\"expands\":{\"readOnly\":\"false\",\"source\":\"device\",\"storageType\":\"direct\"}}],\"functions\":[],\"tags\":[{\"id\":\"DLWZ\",\"name\":\"geo\",\"valueType\":{\"type\":\"geoPoint\"},\"expands\":{\"readOnly\":\"true\",\"storageType\":\"direct\"}}]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "configuration": {
+            "username": "admin",
+            "password": "admin"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1634524426954,
+        "orgId": ""
+    },
+    {
+        "id": "0826_YS",
+        "name": "0826演示产品",
+        "describe": "1231",
+        "classifiedId": "|87|",
+        "classifiedName": "边缘计算",
+        "messageProtocol": "demo",
+        "protocolName": "demo协议（测coap）",
+        "metadata": "{\"events\":[],\"properties\":[{\"id\":\"A\",\"name\":\"1温度\",\"valueType\":{\"type\":\"float\",\"scale\":2,\"expands\":{}},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\",\"storageType\":\"direct\"}},{\"id\":\"B\",\"name\":\"温度求和\",\"valueType\":{\"type\":\"float\",\"scale\":2,\"unit\":\"celsiusDegrees\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"rule\",\"virtualRule\":{\"script\":\"$sum($recent(\\\"A\\\"))\",\"aggType\":\"avg\",\"window\":{\"span\":\"3\",\"every\":\"2\"},\"type\":\"window\",\"windowType\":\"num\"}}}],\"functions\":[],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "configuration": {
+            "username": "admin",
+            "password": "admin"
+        },
+        "state": 0,
+        "creatorId": "1199596756811550720",
+        "createTime": 1629964330529,
+        "orgId": ""
+    },
+    {
+        "id": "0820coap",
+        "name": "0820coap产品",
+        "classifiedId": "|45|",
+        "classifiedName": "智能工业",
+        "messageProtocol": "official-protocol",
+        "protocolName": "官方协议",
+        "metadata": "{\"events\":[{\"expands\":{\"level\":\"ordinary\"},\"valueType\":{\"expands\":{},\"type\":\"int\",\"unit\":\"percent\"},\"id\":\"ffff\",\"name\":\"fff\",\"description\":\"ffff\"},{\"expands\":{\"level\":\"ordinary\"},\"valueType\":{\"expands\":{},\"type\":\"boolean\",\"trueText\":\"是\",\"trueValue\":true,\"falseText\":\"否\",\"falseValue\":false},\"id\":\"13123\",\"name\":\"31231\",\"description\":\"123123\"}],\"properties\":[{\"id\":\"temp\",\"name\":\"21eqw11\",\"valueType\":{\"type\":\"float\",\"scale\":3,\"expands\":{},\"unit\":\"centimeter\"},\"expands\":{\"readOnly\":true,\"source\":\"device\",\"storageType\":\"ignore\"},\"description\":\"test112\"},{\"valueType\":{\"expands\":{},\"type\":\"int\",\"unit\":\"percent\"},\"expands\":{\"source\":\"device\",\"readOnly\":true,\"storageType\":\"direct\"},\"id\":\"test11\",\"name\":\"测试11\",\"description\":\"312测试1\"},{\"valueType\":{\"expands\":{},\"type\":\"int\",\"unit\":\"centimeter\"},\"expands\":{\"source\":\"device\",\"readOnly\":true},\"id\":\"123fewq\",\"name\":\"3333feqwf\",\"description\":\"fewqfewf\"}],\"functions\":[{\"id\":\"testfunc\",\"name\":\"test112\",\"async\":true,\"inputParams\":\"123\",\"outputParams\":\"123\",\"description\":\"123\",\"inputs\":[],\"output\":{\"expands\":{},\"type\":\"date\",\"format\":\"yyyy-MM-dd HH:mm:ss zzz\"}},{\"id\":\"testfunc111\",\"name\":\"test\",\"async\":true,\"inputParams\":\"123\",\"outputParams\":\"123\",\"description\":\"123\",\"inputs\":[{\"valueType\":{\"expands\":{},\"type\":\"int\",\"unit\":\"percent\"},\"id\":\"333\",\"name\":\"123\"}],\"output\":{\"expands\":{},\"type\":\"int\",\"unit\":\"percent\"}},{\"inputs\":[{\"valueType\":{\"expands\":{},\"type\":\"int\",\"unit\":\"percent\"},\"id\":\"ddd\",\"name\":\"ddd\"}],\"output\":{\"expands\":{},\"type\":\"long\",\"unit\":\"count\"},\"id\":\"ttt\",\"name\":\"tttt\",\"async\":true,\"description\":\"123\"}],\"tags\":[{\"valueType\":{\"expands\":{},\"type\":\"long\",\"unit\":\"count\"},\"expands\":{\"source\":\"device\",\"storageType\":\"direct\"},\"id\":\"test\",\"name\":\"test\",\"description\":\"312tag\"},{\"valueType\":{\"expands\":{},\"type\":\"int\",\"unit\":\"percent\"},\"expands\":{\"source\":\"device\",\"storageType\":\"direct\"},\"id\":\"tttt\",\"name\":\"ttt\",\"description\":\"rrr\"},{\"valueType\":{\"expands\":{},\"type\":\"int\",\"unit\":\"percent\"},\"expands\":{\"source\":\"device\",\"storageType\":\"direct\"},\"id\":\"33213\",\"name\":\"333\",\"description\":\"33321\"},{\"valueType\":{\"expands\":{},\"type\":\"int\",\"unit\":\"centimeter\"},\"expands\":{\"source\":\"device\"},\"id\":\"12311\",\"name\":\"test111\",\"description\":\"test\"}]}",
+        "transportProtocol": "CoAP",
+        "deviceType": {
+            "text": "直连设备",
+            "value": "device"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1629450587603,
+        "orgId": ""
+    },
+    {
+        "id": "0215_Zs",
+        "name": "0215子设备产品",
+        "classifiedId": "|45|",
+        "classifiedName": "智能工业",
+        "messageProtocol": "official-protocol",
+        "protocolName": "官方协议",
+        "metadata": "{\"events\":[],\"properties\":[{\"id\":\"temp\",\"name\":\"温度\",\"valueType\":{\"type\":\"float\",\"scale\":2,\"unit\":\"celsiusDegrees\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"device\",\"storageType\":\"direct\"}}],\"functions\":[],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "网关子设备",
+            "value": "childrenDevice"
+        },
+        "configuration": {
+            "secureId": "admin",
+            "secureKey": "admin"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1644893419654,
+        "orgId": "",
+        "storePolicy": "default-column"
+    },
+    {
+        "id": "0215_WG",
+        "name": "0215网关产品",
+        "describe": "测试网关设备",
+        "classifiedId": "|87|",
+        "classifiedName": "边缘计算",
+        "messageProtocol": "off",
+        "protocolName": "官方2.0协议-【演示勿动】",
+        "metadata": "{\"events\":[{\"id\":\"event1\",\"name\":\"温度过高事件\",\"expands\":{\"level\":\"urgent\"},\"valueType\":{\"type\":\"float\"}}],\"properties\":[{\"id\":\"temperature\",\"name\":\"温度\",\"valueType\":{\"type\":\"float\"},\"expands\":{\"readOnly\":\"false\",\"source\":\"device\",\"storageType\":\"direct\"}},{\"id\":\"wet\",\"name\":\"湿度\",\"valueType\":{\"type\":\"float\"},\"expands\":{\"readOnly\":\"false\",\"source\":\"device\"}},{\"id\":\"t_w_per\",\"name\":\"温湿度比值\",\"valueType\":{\"type\":\"float\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"rule\",\"virtualRule\":{\"script\":\"$recent(\\\"temperature\\\")/$recent(\\\"wet\\\")\",\"type\":\"script\"}},\"windows\":[]},{\"id\":\"t_w_per_avg\",\"name\":\"温湿度比平均值\",\"valueType\":{\"type\":\"float\"},\"expands\":{\"readOnly\":\"true\",\"source\":\"rule\",\"storageType\":\"direct\",\"virtualRule\":{\"script\":\"$recent(\\\"t_w_per\\\")\",\"aggType\":\"avg\",\"window\":{\"span\":\"10\",\"every\":\"1\"},\"type\":\"window\",\"windowType\":\"num\"}}}],\"functions\":[{\"id\":\"func1\",\"name\":\"功能\",\"async\":false,\"output\":{},\"inputs\":[{\"id\":\"temp\",\"name\":\"温度\",\"valueType\":{\"type\":\"float\"}}]}],\"tags\":[{\"id\":\"geo\",\"name\":\"地理位置\",\"valueType\":{\"type\":\"geoPoint\"},\"expands\":{\"readOnly\":\"false\",\"storageType\":\"direct\"}}]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "网关设备",
+            "value": "gateway"
+        },
+        "configuration": {
+            "secureId": "admin",
+            "secureKey": "admin"
+        },
+        "state": 1,
+        "creatorId": "1199596756811550720",
+        "createTime": 1644892379324,
+        "orgId": "",
+        "storePolicy": "default-column"
+    },
+    {
+        "id": "0118demo_CS",
+        "name": "0118demo网关",
+        "describe": "测试",
+        "classifiedId": "|87|",
+        "classifiedName": "边缘计算",
+        "messageProtocol": "demo-protocol-yanshi",
+        "protocolName": "演示协议【勿删】",
+        "metadata": "{\"events\":[],\"properties\":[],\"functions\":[],\"tags\":[]}",
+        "transportProtocol": "MQTT",
+        "deviceType": {
+            "text": "网关设备",
+            "value": "gateway"
+        },
+        "configuration": {
+            "username": "admin",
+            "password": "admin"
+        },
+        "state": 1,
+        "creatorId": "fb85d84112fe1b92e60c42c2d3dedadf",
+        "createTime": 1642497339108,
+        "orgId": ""
+    }
+]
